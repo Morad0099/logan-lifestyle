@@ -20,7 +20,6 @@ jobs:
           debug: true
           use_insecure_cipher: true
           script: |
-           alias php='/usr/bin/php8.2'
            cd domains/loganlifestyle.net
            php artisan down
            git checkout master
