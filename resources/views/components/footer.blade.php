@@ -1,17 +1,17 @@
 <footer class="footer">
     <!-- Image Carousel -->
-    <div class="footer-carousel-section">
+    <div class="footer-carousel-section" data-aos="fade-up">
         <div class="container">
             <h3 class="carousel-title">Choose the right plan for every occasion</h3>
         </div>
         <div class="footer-carousel">
             <div class="carousel-container">
                 <!-- Add your carousel images here -->
-                <img src="images/hack.jpg" alt="Carousel Image 1">
-                <img src="images/w1.jpg" alt="Carousel Image 2">
-                <img src="images/hack.jpg" alt="Carousel Image 3">
-                <img src="images/w1.jpg" alt="Carousel Image 3">
-                <img src="images/hack.jpg" alt="Carousel Image 3">
+                <img src="images/hack.jpg" alt="Carousel Image 1" data-aos="fade-up">
+                <img src="images/w1.jpg" alt="Carousel Image 2" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/hack.jpg" alt="Carousel Image 3" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/w1.jpg" alt="Carousel Image 4" data-aos="fade-up" data-aos-delay="300">
+                <img src="images/hack.jpg" alt="Carousel Image 5" data-aos="fade-up" data-aos-delay="400">
             </div>
             <div class="carousel-controls">
                 <button class="carousel-button" data-index="0"></button>
@@ -23,7 +23,7 @@
     </div>
 
     <!-- Footer Content -->
-    <div class="footer-content">
+    <div class="footer-content" data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -31,7 +31,6 @@
                     <p>Brief description about your company goes here.</p>
                     <div class="search-box">
                         <input type="text" placeholder="Search...">
-                        <button type="submit"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -49,13 +48,13 @@
     </div>
 
     <!-- Copyright and Social Icons -->
-    <div class="footer-bottom">
+    <div class="footer-bottom" data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <p>&copy; 2024 Logan Lifestyle. All rights reserved.</p>
                 </div>
-                <div class="col-md-6 text-right">
+                <div class="col-md-6 text-right icons-wrapper">
                     <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
