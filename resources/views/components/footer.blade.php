@@ -48,7 +48,7 @@
     </div>
 
     <!-- Copyright and Social Icons -->
-    <div class="footer-bottom" data-aos="fade-up">
+    <div class="footer-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
