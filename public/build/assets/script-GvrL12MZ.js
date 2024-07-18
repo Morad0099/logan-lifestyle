@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){var o=document.querySelectorAll(".nav-item");o.forEach(function(n){n.addEventListener("mouseover",function(){var e=this.querySelector(".dropdown-menu");e.classList.add("show")}),n.addEventListener("mouseleave",function(){var e=this.querySelector(".dropdown-menu");e.classList.remove("show")})})});
