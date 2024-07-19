@@ -19,7 +19,7 @@
   }
 
   .main-nav {
-      background-color: #0b2c65;
+      background-color: #012c23;
       padding: 10px 0;
       position: sticky;
       width: 100%;
@@ -38,12 +38,16 @@
       color: black;
   }
 
+  .main-nav.nav-scrolled .nav-link {
+      color: black;
+  }
+
   .nav-scrolled .toggle-button {
       color: black;
   }
 
   .logo {
-      height: 40px;
+      height: 30px;
       /* Adjust based on your logo size */
       width: auto;
   }
@@ -69,7 +73,7 @@
   .nav-icon {
       color: white;
       font-size: 1.2rem;
-      margin-left: 15px;
+      margin-left: 35px;
       transition: color 0.3s ease;
   }
 
@@ -78,11 +82,11 @@
   }
 
   .page-title-bar {
-      background-image: url('/public/images/hack.jpg');
+      background-image: url('/public/images/meditation.jpg');
       background-size: cover;
       background-position: center;
-      color: white;
-      padding: 50px 0;
+      color: black;
+      padding: 80px 0;
       text-align: center;
   }
 
@@ -106,8 +110,115 @@
       padding: 10px;
   }
 
+  /* Subscribe card styling */
+  .card {
+      background-color: #b6b4b252 !important;
+      /* Light grey background */
+  }
+
+  .card .card-body {
+      text-align: center;
+      /* Center all content */
+  }
+
+  .card .btn-primary {
+      background-color: #dc3545;
+      /* Red subscribe button */
+      border-color: #dc3545;
+  }
+
+  .card .btn-primary:hover {
+      background-color: #c82333;
+      /* Darker red on hover */
+      border-color: #bd2130;
+  }
+
+  /* Category styling */
+  .card ul li a {
+      color: #000;
+      /* Black text */
+      text-decoration: none;
+      display: block;
+      padding: 5px 0;
+      transition: color 0.3s ease;
+  }
+
+  .card ul li a:hover {
+      color: #dc3545;
+      /* Red text on hover */
+  }
+
+  .card ul li a::before {
+      content: "\25B6";
+      /* Right-pointing triangle */
+      font-size: 0.8em;
+      margin-right: 5px;
+  }
+
+  /* Bold headings */
+  h5,
+  h6,
+  h3 {
+      font-weight: bold;
+  }
+
+  /* Existing styles you provided */
+  .blog-post img {
+      transition: transform 0.3s ease;
+  }
+
+  .blog-post img:hover {
+      transform: scale(1.05);
+  }
+
+  .read-more {
+      color: #c20808;
+      text-decoration: none;
+  }
+
+  .read-more:hover {
+      text-decoration: underline;
+  }
+
+  .latest-news .news-item img {
+      max-height: 150px;
+      object-fit: cover;
+  }
+
+  .latest-news .news-item img:hover {
+      transform: scale(1.05);
+
+  }
+
+
+  /* Paginator styling */
+  .pagination .page-link {
+      color: #dc3545;
+      /* Red text color for all page links */
+      border-color: #dc3545;
+      /* Red border color */
+  }
+
+  .pagination .page-link:hover {
+      background-color: #dc3545;
+      border-color: #dc3545;
+      color: #fff;
+      /* White text on hover */
+  }
+
+  .pagination .page-item.active .page-link {
+      background-color: #dc3545;
+      border-color: #dc3545;
+  }
+
+  .pagination .page-item.disabled .page-link {
+      color: #6c757d;
+      /* Grey color for disabled links */
+      border-color: #dc3545;
+  }
+
   .footer {
-      background-color: #0b2c65;
+      background-color: #012c23;
       color: white;
   }
 
@@ -177,7 +288,7 @@
 
   /* Footer Bottom Styles */
   .footer-bottom {
-      background-color: #081c3f;
+      background-color: #012c23;
       padding: 15px 0;
   }
 
@@ -188,14 +299,18 @@
   }
 
   .footer-carousel-section {
-      background-color: #081c3f;
-      padding: 200px 0;
+      background-color: #012c23;
+      padding: 100px 0;
+      width: 100vw;
   }
 
   .carousel-title {
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
       color: white;
+      font-weight: bold;
+      margin-top: -50px;
+      padding: 50px;
   }
 
   /* Carousel Styles */
@@ -209,15 +324,23 @@
       display: flex;
       transition: transform 0.5s ease;
       gap: 10px;
-      /* Add space between images */
       height: 300px !important;
+      overflow: hidden;
+      /* Add this to hide overflowing content */
   }
 
   .carousel-container img {
-      width: 25%;
-      /* Show 4 images at a time */
+      width: calc(25% - 10px);
+      /* 25% width for 4 images, minus the gap */
       object-fit: cover;
       flex-shrink: 0;
+      height: 300px;
+      transition: transform 0.3s ease;
+  }
+
+  .carousel-container img:hover {
+      transform: scale(1.05);
+      /* Reduced scale for better UX */
   }
 
   .carousel-controls {
@@ -241,6 +364,87 @@
   .carousel-button.active {
       background-color: white;
   }
+
+  .search-filters {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 50px;
+  }
+
+  .filter-item {
+      flex: 1;
+      margin-right: 15px;
+  }
+
+  .filter-item:last-child {
+      margin-right: 0;
+  }
+
+  .filter-item label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: white;
+  }
+
+  .input-icon {
+      position: relative;
+  }
+
+  .input-icon i {
+      position: absolute;
+      left: 240px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #888;
+  }
+
+  .input-icon input {
+      padding-left: 30px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="range"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      height: 50px;
+  }
+
+  .find-place-btn {
+      padding: 10px 20px;
+      background-color: #c20808;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+
+  .find-place-btn:hover {
+      background-color: #0a2456;
+  }
+
+  .price-display {
+      margin-top: -15px;
+      font-weight: bold;
+      color: white;
+  }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
   @media (max-width: 767px) {
       .main-nav .nav {
@@ -354,10 +558,85 @@
       .logo {
           height: 50px;
           /* Adjust based on your logo size */
-          width: 150px;
       }
 
       .page-title-bar {
-        padding: 50px 0;
-    }
+          padding: 50px 0;
+      }
+
+      .footer-carousel-section {
+          padding: 50px 0;
+      }
+
+      .carousel-title {
+          font-size: 1.5rem;
+          margin-bottom: 20px;
+      }
+
+      /* Search filters */
+      .search-filters {
+          flex-direction: column;
+          align-items: stretch;
+          margin-bottom: 30px;
+      }
+
+      .filter-item {
+          margin-right: 0;
+          margin-bottom: 15px;
+      }
+
+      .input-icon i {
+          left: 470px;
+      }
+
+      input[type="text"],
+      input[type="date"],
+      input[type="range"] {
+          height: 40px;
+      }
+
+      .find-place-btn {
+          width: 100%;
+          height: 40px;
+      }
+
+      /* Carousel */
+      .footer-carousel {
+          height: 200px;
+      }
+
+      .carousel-container {
+          height: 200px !important;
+      }
+
+      .carousel-container img {
+          /* width: 100%; */
+          height: 200px;
+      }
+
+      /* Footer content */
+      .footer-content {
+          padding: 50px 0;
+      }
+
+      /* Footer bottom */
+      .footer-bottom {
+          text-align: center;
+      }
+
+      .footer-bottom .col-md-6 {
+          margin-bottom: 10px;
+      }
+
+      .icons-wrapper {
+          justify-content: center;
+      }
+
+      .subscribe-card {
+          order: 2;
+      }
+
+      .blog-posts {
+          order: 1;
+      }
   }

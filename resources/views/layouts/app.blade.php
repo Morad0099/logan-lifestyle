@@ -7,9 +7,9 @@
     <title>Logan Lifestyle</title>
     {{-- <link href="{{ mix('css/app.css') }}" rel="stylesheet"> --}}
     @vite('resources/css/app.css')
-    {{-- <link rel="icon" href="{{ asset('logo/IMG_3682.PNG') }}" type="image/x-icon">
-    <link rel="icon" href="{{ asset('logo/IMG_3682.PNG') }}" type="image/png">
-    <link rel="apple-touch-icon" href="{{ asset('logo/IMG_3682.PNG') }}"> --}}
+    <link rel="icon" href="{{ asset('images/favicon-32x32.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('favicon-16x16.png') }}" type="image/png">
+    <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
     <!-- AOS CSS from CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -29,7 +29,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: #0b2c65;
+            background: #012c23;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -39,7 +39,7 @@
         .loader {
             border: 8px solid #f3f3f3;
             border-radius: 50%;
-            border-top: 8px solid #3498db;
+            border-top: 8px solid #e01b1b;
             width: 60px;
             height: 60px;
             animation: spin 1.5s linear infinite;
@@ -80,7 +80,7 @@
             right: 0;
             width: 100%;
             height: 100%;
-            background: #0b2c65;
+            background: #012c23;
             transform: translateX(0);
             transition: transform 0.8s ease-out;
         }
@@ -137,6 +137,26 @@
                 }, 1000); // Adjust timing to match the curtain animation duration
             }, 1000); // Loader delay duration (adjust as needed)
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+    const fadeUpElements = document.querySelectorAll('.fade-up');
+
+    function handleScroll() {
+        fadeUpElements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                element.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+
+    // Trigger the function initially to show elements already in view
+    handleScroll();
+});
+
     </script>
 </body>
 

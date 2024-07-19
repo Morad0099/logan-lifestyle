@@ -22,7 +22,7 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <a href="#" class="navbar-brand">
-                    <img src="{{ asset('images/logo2.png') }}" alt="Logan Lifestyle Logo" class="logo">
+                    <img src="{{ asset('images/LoganLifestyle.png') }}" alt="Logan Lifestyle Logo" class="logo">
                 </a>
                 <div class="d-flex align-items-center">
                     <ul class="nav mr-4">
@@ -46,7 +46,7 @@
     <!-- Page title bar -->
     <div class="page-title-bar" data-aos="fade-down">
         <div class="container">
-            <h4>@yield('page_title', 'Page Title')</h4>
+            <h4 style="font-weight: bold">@yield('title', 'Page Title')</h4>
         </div>
     </div>
 
