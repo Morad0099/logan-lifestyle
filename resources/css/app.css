@@ -50,6 +50,7 @@
       height: 30px;
       /* Adjust based on your logo size */
       width: auto;
+      background-color: white;
   }
 
   .main-nav .nav-link {
