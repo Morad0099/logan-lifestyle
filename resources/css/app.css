@@ -75,6 +75,8 @@
       margin-bottom: 10px;
       font-family: "Goldman";
       font-weight: bold;
+      text-align: left; /* Ensures text alignment to the left */
+
   }
 
   .nav-icons {
@@ -602,11 +604,22 @@
       font-weight: bold;
   }
 
+  .highlights-list{
+    text-align: left; /* Ensures text alignment to the left */
+  }
+
   .event-packages {
       font-size: 1.5em;
       margin-bottom: 10px;
       font-family: "Goldman";
       font-weight: bold;
+  }
+
+
+
+  .package-list {
+    text-align: left; /* Ensures text alignment to the left */
+
   }
 
   .single-page-image {
@@ -663,6 +676,8 @@
   .reply-title {
       font-size: 1.3em;
       margin-bottom: 15px;
+      font-weight: bold;
+      font-family: 'Goldman';
   }
 
   .reply-text {

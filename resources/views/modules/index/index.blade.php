@@ -59,7 +59,7 @@
                 <div class="blog-posts">
                     <!-- Blog Post 1 -->
                     <div class="blog-post mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                        <img src="images/wedding.jpg" alt="Blog Post 1" class="img-fluid mb-3">
+                        <a href="{{ route('wedding') }}"><img src="images/wedding.jpg" alt="Blog Post 1" class="img-fluid mb-3"></a>
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
@@ -73,11 +73,11 @@
 
                     <!-- Repeat for Blog Posts 2, 3, and 4 -->
                     <div class="blog-post mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                        <img src="images/arts.jpg" alt="Blog Post 1" class="img-fluid mb-3">
+                        <a href="{{ route('arts') }}"><img src="images/arts.jpg" alt="Blog Post 1" class="img-fluid mb-3"></a>
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
-                        <h3><a href="{{ route('arts') }}" class=>ART SHOWS & POP UPS</a></h3>
+                        <h3><a href="{{ route('arts') }}">ART SHOWS & POP UPS</a></h3>
                         <p>Immerse your audience in a world of creativity at Logan Lifestyle. Our versatile event center is
                             the perfect canvas for your art shows and pop-up events, offering a dynamic space that brings
                             your vision to life.</p>
@@ -85,11 +85,11 @@
                     </div>
 
                     <div class="blog-post mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                        <img src="images/dance.jpg" alt="Blog Post 1" class="img-fluid mb-3">
+                        <a href="{{ route('dance') }}"><img src="images/dance.jpg" alt="Blog Post 1" class="img-fluid mb-3"></a>
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
-                        <h3><a href="{{ route('dance') }}" class=>DANCE PARTIES</a></h3>
+                        <h3><a href="{{ route('dance') }}">DANCE PARTIES</a></h3>
                         <p>Get ready to dance the night away at Logan Lifestyle! Our event center is the perfect place for
                             unforgettable dance parties, offering a vibrant atmosphere and top-notch amenities to make your
                             event a hit.</p>
@@ -97,11 +97,11 @@
                     </div>
 
                     <div class="blog-post mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                        <img src="images/meditation.jpg" alt="Blog Post 1" class="img-fluid mb-3">
+                        <a href="{{ route('meditaion') }}"><img src="images/meditation.jpg" alt="Blog Post 1" class="img-fluid mb-3"></a>
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
-                        <h3><a href="{{ route('meditaion') }}" class=>SPIRITUAL & MEDITATION</a></h3>
+                        <h3><a href="{{ route('meditaion') }}">SPIRITUAL & MEDITATION</a></h3>
                         <p>Find peace and tranquility at Logan Lifestyle. Our serene event center is the perfect setting for
                             spiritual retreats, meditation sessions, and wellness workshops, providing a calm and inspiring
                             environment for your guests.</p>

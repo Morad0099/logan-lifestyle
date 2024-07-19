@@ -39,31 +39,80 @@
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-whatsapp"></i></a>
-    </div>
+    </div><br>
 
-    <h3 class="reply-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Leave a Reply</h3>
+    <h3 class="reply-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">INTAKE FORM</h3>
 
     <p class="reply-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
         Your email address will not be published. Required fields are marked *
     </p>
 
     <form class="reply-form" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-        <div class="form-group">
-            <label for="name">Name *</label>
-            <input type="text" id="name" required>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="fname">First Name *</label>
+                    <input type="text" class="form-control" id="fname" placeholder="Enter your first name" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="lname">Last Name *</label>
+                    <input type="text" class="form-control" id="lname" placeholder="Enter your last name" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="phone">Phone *</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="address">Personal Address *</label>
+                    <input type="text" class="form-control" id="address" placeholder="Enter your address" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="date">Date *</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="duration">Event Duration *</label>
+                    <input type="text" class="form-control" id="duration" placeholder="Enter the duration of the event" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="people">Number of People *</label>
+                    <input type="text" class="form-control" id="people" placeholder="Enter the number of people" required>
+                </div>
+            </div>
         </div>
         <div class="form-group">
-            <label for="email">Email *</label>
-            <input type="email" id="email" required>
-        </div>
-        <div class="form-group">
-            <label for="comment">Comment *</label>
-            <textarea id="comment" required></textarea>
+            <label for="comment">Description *</label>
+            <textarea id="comment" class="form-control" rows="4" placeholder="Enter a brief description" required></textarea>
         </div>
         <button type="submit" class="submit-button">
             Send Message <i class="fas fa-arrow-right"></i>
         </button>
     </form>
+
 </div>
 
 @endsection
