@@ -1,4 +1,8 @@
   /* Navbar styles */
+  .body {
+      font-family: "Goldman";
+  }
+
   .navbar-custom {
       font-family: 'Poppins', sans-serif;
   }
@@ -64,6 +68,13 @@
 
   .main-nav .nav-link:hover {
       color: #e01b1b;
+  }
+
+  .categories-list {
+      font-size: 1em;
+      margin-bottom: 10px;
+      font-family: "Goldman";
+      font-weight: bold;
   }
 
   .nav-icons {
@@ -580,6 +591,22 @@
   .single-page-title {
       font-size: 2.5em;
       margin-bottom: 10px;
+      font-family: "Goldman";
+      font-weight: bold;
+  }
+
+  .venue-highlights {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      font-family: "Goldman";
+      font-weight: bold;
+  }
+
+  .event-packages {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      font-family: "Goldman";
+      font-weight: bold;
   }
 
   .single-page-image {
@@ -592,6 +619,8 @@
   .single-page-subtitle {
       font-size: 1.5em;
       margin-bottom: 15px;
+      font-family: "Goldman";
+      font-weight: bold;
   }
 
   .single-page-text {
@@ -884,8 +913,20 @@
       }
 
       .single-page-subtitle {
-        font-size: 1em;
-        font-family: "Goldman";
-        font-weight: bold;
-    }
+          font-size: 1em;
+          font-family: "Goldman";
+          font-weight: bold;
+      }
+
+      .venue-highlights {
+          font-size: 1em;
+          font-family: "Goldman";
+          font-weight: bold;
+      }
+
+      .event-packages {
+          font-size: 1em;
+          font-family: "Goldman";
+          font-weight: bold;
+      }
   }

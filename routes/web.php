@@ -10,6 +10,9 @@ use App\Http\Controllers\RouteController;
 
 Route::get('/', [RouteController::class, 'index']);
 Route::get('/wedding', [RouteController::class, 'wedding'])->name('wedding');
+Route::get('/arts', [RouteController::class, 'arts'])->name('arts');
+Route::get('/dance', [RouteController::class, 'dance'])->name('dance');
+Route::get('/meditation', [RouteController::class, 'meditation'])->name('meditaion');
 
 // routes/web.php
 Route::get('/composer-install', [ComposerController::class, 'install'])->middleware('auth');

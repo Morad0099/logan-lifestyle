@@ -21,7 +21,7 @@
     <div class="main-nav" data-aos="fade-down">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <a href="#" class="navbar-brand">
+                <a href="/" class="navbar-brand">
                     <img src="{{ asset('images/LoganLifestyle.png') }}" alt="Logan Lifestyle Logo" class="logo">
                 </a>
                 <div class="d-flex align-items-center">

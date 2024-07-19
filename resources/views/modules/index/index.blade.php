@@ -13,6 +13,8 @@
                         <h5 class="card-title">Leave Comment</h5>
                         <form>
                             <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder="Enter name"><br>
+                                <textarea id="comment" class="form-control" placeholder="Leave Comment"></textarea><br>
                                 <input type="email" class="form-control" placeholder="Enter your email">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
@@ -24,29 +26,30 @@
                             <div class="news-item mb-3">
                                 <img src="images/wedding.jpg" alt="News 1" class="img-fluid mb-2">
                                 <h6>Weddings</h6>
-                                <p class="small">Short description of the news item.</p>
-                                <div class="blog-post-meta small text-muted mb-2">
+                                <h2 class="single-page-subtitle">The Perfect Blend of Elegance and Charm</h2><br>
+                                {{-- <div class="blog-post-meta small text-muted mb-2">
                                     <span>Date</span> / <span>By Author</span>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="news-item mb-3">
                                 <img src="images/arts.jpg" alt="News 2" class="img-fluid mb-2">
                                 <h6>ART SHOWS & POP UPS</h6>
-                                <p class="small">Short description of the news item.</p>
-                                <div class="blog-post-meta small text-muted mb-2">
+                                <h2 class="single-page-subtitle">Immerse Your Audience in a World of Creativity</h2><br>
+                                {{-- <div class="blog-post-meta small text-muted mb-2">
                                     <span>Date</span> / <span>By Author</span>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
 
                         <!-- Categories -->
                         <h5>Categories:</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">WEDDINGS</a></li>
-                            <li><a href="#">ART SHOWS & POP UPS</a></li>
-                            <li><a href="#">DANCE PARTIES</a></li>
-                            <li><a href="#">SPIRITUAL & MEDITATION</a></li>
+                        <ul class="list-unstyled categories-list">
+                            <li><a href="{{ route('wedding') }}">WEDDINGS</a></li>
+                            <li><a href="{{ route('arts') }}">ART SHOWS & POP UPS</a></li>
+                            <li><a href="{{ route('dance') }}">DANCE PARTIES</a></li>
+                            <li><a href="{{ route('meditaion') }}">SPIRITUAL & MEDITATION</a></li>
                         </ul>
+
                     </div>
                 </div>
             </div>
@@ -61,7 +64,10 @@
                             <span>Date</span> / <span>By Author</span>
                         </div>
                         <h3><a href="{{ route('wedding') }}">WEDDINGS</a></h3>
-                        <p>Celebrate your love story at Logan Lifestyle. Emphasize the unique features and atmosphere that make your event center the ideal choice for weddings. Our stunning event center offers the perfect blend of elegance and charm, making it the ideal venue for your unforgettable wedding day.</p>
+                        <p>Celebrate your love story at Logan Lifestyle. Emphasize the unique features and atmosphere that
+                            make your event center the ideal choice for weddings. Our stunning event center offers the
+                            perfect blend of elegance and charm, making it the ideal venue for your unforgettable wedding
+                            day.</p>
                         <a href="{{ route('wedding') }}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
 
@@ -71,9 +77,11 @@
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
-                        <h3><a href="#" class=>ART SHOWS & POP UPS</a></h3>
-                        <p>Short description of the blog post content...</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <h3><a href="{{ route('arts') }}" class=>ART SHOWS & POP UPS</a></h3>
+                        <p>Immerse your audience in a world of creativity at Logan Lifestyle. Our versatile event center is
+                            the perfect canvas for your art shows and pop-up events, offering a dynamic space that brings
+                            your vision to life.</p>
+                        <a href="{{ route('arts') }}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <div class="blog-post mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
@@ -81,9 +89,11 @@
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
-                        <h3><a href="#" class=>DANCE PARTIES</a></h3>
-                        <p>Short description of the blog post content...</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <h3><a href="{{ route('dance') }}" class=>DANCE PARTIES</a></h3>
+                        <p>Get ready to dance the night away at Logan Lifestyle! Our event center is the perfect place for
+                            unforgettable dance parties, offering a vibrant atmosphere and top-notch amenities to make your
+                            event a hit.</p>
+                        <a href="{{ route('dance') }}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <div class="blog-post mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
@@ -91,9 +101,12 @@
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
-                        <h3><a href="#" class=>SPIRITUAL & MEDITATION</a></h3>
-                        <p>Short description of the blog post content...</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <h3><a href="{{ route('meditaion') }}" class=>SPIRITUAL & MEDITATION</a></h3>
+                        <p>Find peace and tranquility at Logan Lifestyle. Our serene event center is the perfect setting for
+                            spiritual retreats, meditation sessions, and wellness workshops, providing a calm and inspiring
+                            environment for your guests.</p>
+                        <a href="{{ route('meditaion') }}" class="read-more">Read More <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 

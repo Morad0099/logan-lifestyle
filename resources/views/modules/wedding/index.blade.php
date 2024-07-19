@@ -5,11 +5,11 @@
 @section('content')
 
 <div class="single-page-container">
-    <h1 class="single-page-title" >Celebrate your love story at Logan Lifestyle</h1>
+    <h1 class="single-page-title" >Celebrate your love story at Logan Lifestyle</h1><br>
     
     <img src="images/wedding.jpg" alt="Logan Lifestyle Wedding Venue" class="single-page-image" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
 
-    <h2 class="single-page-subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">The Perfect Blend of Elegance and Charm</h2>
+    <h2 class="single-page-subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">The Perfect Blend of Elegance and Charm</h2><br>
 
     <p class="single-page-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
         Our stunning event center offers the perfect blend of elegance and charm, making it the ideal venue for your unforgettable wedding day. With our Silver, Gold, and Platinum packages, we cater to every couple's unique needs and desires.
