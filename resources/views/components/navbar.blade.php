@@ -73,7 +73,7 @@
     <!-- Page title bar -->
     <div class="page-title-bar" data-aos="fade-down">
         <div class="container">
-            <h4 style="font-weight: bold">@yield('title', 'Page Title')</h4>
+            <h4 style="font-weight: bold; color: white">@yield('title', 'Page Title')</h4>
         </div>
     </div>
 
