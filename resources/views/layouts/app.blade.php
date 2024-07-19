@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init();
-    </script>    <!-- Bootstrap CSS -->
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init();
+        });
+    </script> <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <!-- Include Font Awesome -->
@@ -138,25 +140,24 @@
             }, 1000); // Loader delay duration (adjust as needed)
         });
 
-        document.addEventListener('DOMContentLoaded', function () {
-    const fadeUpElements = document.querySelectorAll('.fade-up');
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeUpElements = document.querySelectorAll('.fade-up');
 
-    function handleScroll() {
-        fadeUpElements.forEach(element => {
-            const rect = element.getBoundingClientRect();
-            if (rect.top < window.innerHeight && rect.bottom >= 0) {
-                element.classList.add('visible');
+            function handleScroll() {
+                fadeUpElements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                        element.classList.add('visible');
+                    }
+                });
             }
+
+            window.addEventListener('scroll', handleScroll);
+            window.addEventListener('resize', handleScroll);
+
+            // Trigger the function initially to show elements already in view
+            handleScroll();
         });
-    }
-
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleScroll);
-
-    // Trigger the function initially to show elements already in view
-    handleScroll();
-});
-
     </script>
 </body>
 

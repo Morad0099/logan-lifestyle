@@ -585,9 +585,9 @@
           margin-bottom: 15px;
       }
 
-      .input-icon i {
+      /* .input-icon i {
           left: 470px;
-      }
+      } */
 
       input[type="text"],
       input[type="date"],

@@ -10,12 +10,12 @@
                 <!-- Subscribe Card -->
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Subscribe</h5>
+                        <h5 class="card-title">Leave Comment</h5>
                         <form>
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="Enter your email">
                             </div>
-                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </form><br>
 
                         <!-- Latest News -->
