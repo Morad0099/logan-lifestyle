@@ -50,7 +50,7 @@
             <p class="company-description">Welcome to Logan Lifestyle, your premier destination for finding the perfect apartment for your next stay. Whether you’re planning a short vacation or a long-term stay, we offer a wide range of fully furnished apartments to suit your needs. Our mission is to provide a seamless booking experience, ensuring that you feel at home no matter where you are. With a commitment to quality and customer satisfaction, we make it easy for you to find, book, and enjoy your ideal apartment. Explore our listings and discover your home away from home today!</p>
             <h3>Menu List</h3>
             <ul class="side-menu">
-                <li><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact Us</a></li>
@@ -81,8 +81,8 @@
     <div class="breadcrumbs" data-aos="fade-down">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">@yield('page_title', 'Current Page')</li>
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active">@yield('title', 'Current Page')</li>
             </ol>
         </div>
     </div>

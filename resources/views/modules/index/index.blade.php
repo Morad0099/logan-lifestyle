@@ -60,9 +60,9 @@
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
-                        <h3><a href="#" class="text-dark">WEDDINGS</a></h3>
-                        <p>Short description of the blog post content...</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <h3><a href="{{ route('wedding') }}">WEDDINGS</a></h3>
+                        <p>Celebrate your love story at Logan Lifestyle. Emphasize the unique features and atmosphere that make your event center the ideal choice for weddings. Our stunning event center offers the perfect blend of elegance and charm, making it the ideal venue for your unforgettable wedding day.</p>
+                        <a href="{{ route('wedding') }}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <!-- Repeat for Blog Posts 2, 3, and 4 -->
@@ -71,7 +71,7 @@
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
-                        <h3><a href="#" class="text-dark">ART SHOWS & POP UPS</a></h3>
+                        <h3><a href="#" class=>ART SHOWS & POP UPS</a></h3>
                         <p>Short description of the blog post content...</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -81,7 +81,7 @@
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
-                        <h3><a href="#" class="text-dark">DANCE PARTIES</a></h3>
+                        <h3><a href="#" class=>DANCE PARTIES</a></h3>
                         <p>Short description of the blog post content...</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
@@ -91,7 +91,7 @@
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
-                        <h3><a href="#" class="text-dark">SPIRITUAL & MEDITATION</a></h3>
+                        <h3><a href="#" class=>SPIRITUAL & MEDITATION</a></h3>
                         <p>Short description of the blog post content...</p>
                         <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>

@@ -11,4 +11,9 @@ class RouteController extends Controller
     {
         return view('modules.index.index');
     }
+
+    public function wedding(): View
+    {
+        return view('modules.wedding.index');
+    }
 }
