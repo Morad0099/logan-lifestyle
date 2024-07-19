@@ -304,6 +304,126 @@
       width: 100vw;
   }
 
+  .side-drawer {
+      position: fixed;
+      top: 0;
+      left: 250px;
+      width: 350px;
+      height: 100%;
+      background-color: #012c23;
+      transition: 0.3s;
+      overflow-y: auto;
+      z-index: 1000;
+  }
+
+  .side-drawer-content {
+      padding: 20px;
+      color: white;
+  }
+
+  .side-drawer .logo {
+      width: 100%;
+      max-width: 200px;
+      margin-bottom: 20px;
+  }
+
+  .side-drawer .company-description {
+      font-size: 14px;
+      margin-bottom: 20px;
+  }
+
+  .side-drawer h3 {
+      margin-bottom: 15px;
+  }
+
+  .side-menu {
+      list-style-type: none;
+      padding: 0;
+  }
+
+  .side-menu li {
+      margin-bottom: 10px;
+  }
+
+  .side-menu a {
+      color: white;
+      text-decoration: none;
+  }
+
+  .book-place {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #012c23;
+      text-decoration: none;
+      border-radius: 5px;
+  }
+
+  .small-text {
+      font-size: 12px;
+      margin-bottom: 20px;
+  }
+
+  .booking-form label {
+      display: block;
+      margin-bottom: 5px;
+  }
+
+  .input-with-icon {
+      position: relative;
+  }
+
+  .input-with-icon input {
+      width: 100%;
+      padding: 10px;
+      padding-left: 30px;
+      margin-bottom: 15px;
+  }
+
+  .input-with-icon i {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  .book-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #c20808;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px !important;
+  }
+
+  .book-button i {
+      margin-left: 5px;
+  }
+
+  /* Show the side drawer when it has the 'open' class */
+  .side-drawer.open {
+      left: 0;
+  }
+
+  /* Overlay to darken the background when side drawer is open */
+  .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+  }
+
+  .overlay.show {
+      display: block;
+  }
+
   .carousel-title {
       text-align: center;
       margin-bottom: 30px;
@@ -435,15 +555,15 @@
   }
 
   .fade-up {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
 
-.fade-up.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+  .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+  }
 
 
   @media (max-width: 767px) {

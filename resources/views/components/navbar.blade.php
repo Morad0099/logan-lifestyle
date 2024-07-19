@@ -43,6 +43,33 @@
         </div>
     </div>
 
+     <!-- Side Drawer -->
+     <div id="sideDrawer" class="side-drawer">
+        <div class="side-drawer-content">
+            <img src="{{ asset('images/LoganLifestyle.png') }}" alt="Logan Lifestyle Logo" class="logo">
+            <p class="company-description">Your trusted partner in luxury living.</p>
+            <h3>Menu List</h3>
+            <ul class="side-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h3>Book a Place</h3>
+            <p class="small-text">Experience luxury like never before</p>
+            <div class="booking-form">
+                <label for="location">Location</label>
+                <div class="input-with-icon">
+                    <input type="text" id="location" placeholder="Enter location">
+                    {{-- <i class="fas fa-map-marker-alt"></i> --}}
+                </div>
+                <label for="date">Pick a Date</label>
+                <input type="date" id="date">
+                <button class="book-button">Book Now <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
     <!-- Page title bar -->
     <div class="page-title-bar" data-aos="fade-down">
         <div class="container">
@@ -62,15 +89,35 @@
 </nav>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const mainNav = document.querySelector('.main-nav');
-
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 50) { // Adjust the scroll value as needed
-            mainNav.classList.add('nav-scrolled');
-        } else {
-            mainNav.classList.remove('nav-scrolled');
-        }
+    document.addEventListener('DOMContentLoaded', function () {
+        const mainNav = document.querySelector('.main-nav');
+        const toggleButton = document.querySelector('.toggle-button');
+        const sideDrawer = document.getElementById('sideDrawer');
+        const body = document.body;
+    
+        // Create overlay element
+        const overlay = document.createElement('div');
+        overlay.classList.add('overlay');
+        body.appendChild(overlay);
+    
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                mainNav.classList.add('nav-scrolled');
+            } else {
+                mainNav.classList.remove('nav-scrolled');
+            }
+        });
+    
+        toggleButton.addEventListener('click', function() {
+            sideDrawer.classList.toggle('open');
+            overlay.classList.toggle('show');
+            body.style.overflow = sideDrawer.classList.contains('open') ? 'hidden' : '';
+        });
+    
+        overlay.addEventListener('click', function() {
+            sideDrawer.classList.remove('open');
+            overlay.classList.remove('show');
+            body.style.overflow = '';
+        });
     });
-});
-</script>
+    </script>
