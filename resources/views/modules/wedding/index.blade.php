@@ -22,7 +22,7 @@
     </div>
 
     <p class="client-comment" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-        "Our wedding at Logan Lifestyle was everything we dreamed of and more. The venue was stunning, the staff was incredible, and every detail was perfect. We couldn't have asked for a better experience." - Mr & Mrs Dekyi
+        "Our wedding at Logan Lifestyle was everything we dreamed of and more. The venue was stunning, the staff was incredible, and every detail was perfect. We couldn't have asked for a better experience." <br> - Mr & Mrs Dekyi -
     </p>
 
     <div class="social-icons" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
