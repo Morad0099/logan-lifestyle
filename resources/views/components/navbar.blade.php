@@ -47,16 +47,16 @@
      <div id="sideDrawer" class="side-drawer">
         <div class="side-drawer-content">
             <img src="{{ asset('images/LoganLifestyle.png') }}" alt="Logan Lifestyle Logo" class="logo">
-            <p class="company-description">Your trusted partner in luxury living.</p>
+            <p class="company-description">Welcome to Logan Lifestyle, your premier destination for finding the perfect apartment for your next stay. Whether you’re planning a short vacation or a long-term stay, we offer a wide range of fully furnished apartments to suit your needs. Our mission is to provide a seamless booking experience, ensuring that you feel at home no matter where you are. With a commitment to quality and customer satisfaction, we make it easy for you to find, book, and enjoy your ideal apartment. Explore our listings and discover your home away from home today!</p>
             <h3>Menu List</h3>
             <ul class="side-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
             <h3>Book a Place</h3>
-            <p class="small-text">Experience luxury like never before</p>
+            <p class="small-text">Ready to find your perfect stay? Browse our selection of top-rated apartments and book your ideal home away from home in just a few clicks. Enjoy comfort, convenience, and quality accommodations</p>
             <div class="booking-form">
                 <label for="location">Location</label>
                 <div class="input-with-icon">
