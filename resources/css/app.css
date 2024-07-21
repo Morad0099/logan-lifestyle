@@ -1,7 +1,11 @@
   /* Navbar styles */
-  .body {
-      font-family: "Goldman";
-  }
+  body {
+    font-family: "Goldman";
+    background-color: #000C21 !important;
+    color: white !important;
+}
+
+
 
   .navbar-custom {
       font-family: 'Poppins', sans-serif;
@@ -669,7 +673,7 @@
 
   .social-icons a {
       margin: 0 10px;
-      color: #333;
+      color: white;
       font-size: 1.2em;
   }
 

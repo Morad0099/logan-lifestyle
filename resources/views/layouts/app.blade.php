@@ -14,9 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init();
-        });
+        AOS.init();
     </script> <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -90,6 +88,83 @@
         #curtain-container.reveal .curtain {
             transform: translateX(100%);
         }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateX(-90deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: rotateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .nav-item {
+            opacity: 0;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .nav-item.animate-slideIn {
+            animation-name: slideIn;
+        }
+
+        .nav-item.animate-scaleUp {
+            animation-name: scaleUp;
+        }
+
+        .nav-item.animate-rotate {
+            animation-name: rotate;
+        }
+
+        .nav-item.animate-bounce{
+            animation-name: bounce;
+        }
     </style>
 </head>
 
@@ -136,8 +211,9 @@
                 setTimeout(() => {
                     curtainContainer.style.display = 'none';
                     app.style.display = 'block';
+                    AOS.refresh(); // Refresh AOS
                 }, 1000); // Adjust timing to match the curtain animation duration
-            }, 1000); // Loader delay duration (adjust as needed)
+            }, 1000);
         });
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -157,6 +233,17 @@
 
             // Trigger the function initially to show elements already in view
             handleScroll();
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const navItems = document.querySelectorAll('.nav-item');
+            const animations = ['slideIn', 'scaleUp', 'rotate', 'bounce'];
+
+            navItems.forEach((item, index) => {
+                const animationClass = `animate-${animations[index % animations.length]}`;
+                item.classList.add(animationClass);
+                item.style.animationDelay = `${index * 0.1}s`;
+            });
         });
     </script>
 </body>

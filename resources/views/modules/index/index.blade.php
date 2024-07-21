@@ -23,7 +23,7 @@
                         <!-- Latest News -->
                         <h5>Latest News:</h5>
                         <div class="latest-news mb-4">
-                            <div class="news-item mb-3">
+                            <div class="news-item mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                                 <img src="images/wedding.jpg" alt="News 1" class="img-fluid mb-2">
                                 <h6>Weddings</h6>
                                 <h2 class="single-page-subtitle">The Perfect Blend of Elegance and Charm</h2><br>
@@ -31,7 +31,7 @@
                                     <span>Date</span> / <span>By Author</span>
                                 </div> --}}
                             </div>
-                            <div class="news-item mb-3">
+                            <div class="news-item mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                                 <img src="images/arts.jpg" alt="News 2" class="img-fluid mb-2">
                                 <h6>ART SHOWS & POP UPS</h6>
                                 <h2 class="single-page-subtitle">Immerse Your Audience in a World of Creativity</h2><br>
@@ -43,7 +43,7 @@
 
                         <!-- Categories -->
                         <h5>Categories:</h5>
-                        <ul class="list-unstyled categories-list">
+                        <ul class="list-unstyled categories-list" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                             <li><a href="{{ route('wedding') }}">WEDDINGS</a></li>
                             <li><a href="{{ route('arts') }}">ART SHOWS & POP UPS</a></li>
                             <li><a href="{{ route('dance') }}">DANCE PARTIES</a></li>

@@ -1,6 +1,6 @@
 <nav class="navbar-custom">
     <!-- Top bar with contact info and social icons -->
-    <div class="top-bar" data-aos="fade-down">
+    <div class="top-bar">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -18,7 +18,7 @@
     </div>
 
     <!-- Main navigation bar -->
-    <div class="main-nav" data-aos="fade-down">
+    <div class="main-nav">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <a href="/" class="navbar-brand">
@@ -71,14 +71,14 @@
     </div>
 
     <!-- Page title bar -->
-    <div class="page-title-bar" data-aos="fade-down">
+    <div class="page-title-bar">
         <div class="container">
             <h4 style="font-weight: bold; color: white">@yield('title', 'Page Title')</h4>
         </div>
     </div>
 
     <!-- Breadcrumbs -->
-    <div class="breadcrumbs" data-aos="fade-down">
+    <div class="breadcrumbs">
         <div class="container">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
