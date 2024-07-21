@@ -6,7 +6,7 @@
     <div class="footer-content" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <a href="#" class="navbar-brand">
                         <img src="{{ asset('images/LoganLifestyle.png') }}" alt="Logan Lifestyle Logo" style="height: 100px;">
                     </a>
@@ -16,13 +16,13 @@
                         <input type="text" placeholder="Search...">
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <h4>Contact Us</h4>
                     <p>Address: 123 Street Name, City, Country</p>
                     <p>Phone: +1 234 567 890</p>
                     <p>Email: info@example.com</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <h4>About Us</h4>
                     <p>More information about your company, mission, or values can go here.</p>
                 </div>

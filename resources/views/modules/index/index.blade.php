@@ -132,7 +132,7 @@
         <div class="container">
             <h1 class="carousel-title">Choose the right plan for every occasion</h1>
 
-            <div class="search-filters" data-aos-delay="200">
+            <div class="search-filters" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <div class="filter-item">
                     <label for="location">Select Location</label>
                     <div class="input-icon">
@@ -146,7 +146,7 @@
                     <input type="date" id="date">
                 </div>
 
-                <div class="filter-item">
+                <div class="filter-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <label for="price">Price</label>
                     <input type="range" id="price" min="0" max="1000" step="10">
                     <div class="price-display">$<span id="priceValue">500</span></div>
@@ -158,7 +158,7 @@
             </div>
         </div>
 
-        <div class="footer-carousel">
+        <div class="footer-carousel" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
             <div class="carousel-container">
                 <!-- Add your carousel images here -->
                 <img src="images/wedding.jpg" alt="Carousel Image 1">
