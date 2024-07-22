@@ -7,7 +7,7 @@
 <div class="single-page-container">
     <h1 class="single-page-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Art Shows & Pop Ups at Logan Lifestyle</h1>
     
-    <img src="images/arts.jpg" alt="Logan Lifestyle Art Venue" class="single-page-image" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+    <img src="images/acts/Untitled.jpeg" alt="Logan Lifestyle Art Venue" class="single-page-image" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
 
     <h2 class="single-page-subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Immerse Your Audience in a World of Creativity</h2>
 
@@ -26,9 +26,9 @@
     </ul><br>
 
     <div class="image-row">
-        <img src="images/arts.jpg" alt="Flexible Spaces" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-        <img src="images/arts.jpg" alt="Modern Amenities" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-        <img src="images/arts.jpg" alt="Outdoor Area" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <img src="images/acts/side-view-man-with-braids-portrait.jpg" alt="Flexible Spaces" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <img src="images/acts/close-up-woman-s-hand-painting-canvas-with-holding-messy-palette.jpg" alt="Modern Amenities" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <img src="images/acts/Untitled1.jpeg" alt="Outdoor Area" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
     </div>
 
     <p class="client-comment" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">

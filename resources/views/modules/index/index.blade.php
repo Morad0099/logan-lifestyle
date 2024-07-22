@@ -24,7 +24,7 @@
                         <h5>Latest News:</h5>
                         <div class="latest-news mb-4">
                             <div class="news-item mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                                <img src="images/wedding.jpg" alt="News 1" class="img-fluid mb-2">
+                                <img src="images/weddings/bunch-flowers-leaves-table.jpg" alt="News 1" class="img-fluid mb-2">
                                 <h6>Weddings</h6>
                                 <h2 class="single-page-subtitle">The Perfect Blend of Elegance and Charm</h2><br>
                                 {{-- <div class="blog-post-meta small text-muted mb-2">
@@ -32,7 +32,7 @@
                                 </div> --}}
                             </div>
                             <div class="news-item mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                                <img src="images/arts.jpg" alt="News 2" class="img-fluid mb-2">
+                                <img src="images/acts/side-view-man-with-braids-portrait.jpg" alt="News 2" class="img-fluid mb-2">
                                 <h6>ART SHOWS & POP UPS</h6>
                                 <h2 class="single-page-subtitle">Immerse Your Audience in a World of Creativity</h2><br>
                                 {{-- <div class="blog-post-meta small text-muted mb-2">
@@ -59,7 +59,7 @@
                 <div class="blog-posts">
                     <!-- Blog Post 1 -->
                     <div class="blog-post mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                        <a href="{{ route('wedding') }}"><img src="images/wedding.jpg" alt="Blog Post 1" class="img-fluid mb-3"></a>
+                        <a href="{{ route('wedding') }}"><img src="images/weddings/low-angle-people-celebrating-wedding-nature.jpg" alt="Blog Post 1" class="img-fluid mb-3"></a>
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
@@ -73,7 +73,7 @@
 
                     <!-- Repeat for Blog Posts 2, 3, and 4 -->
                     <div class="blog-post mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                        <a href="{{ route('arts') }}"><img src="images/arts.jpg" alt="Blog Post 1" class="img-fluid mb-3"></a>
+                        <a href="{{ route('arts') }}"><img src="images/acts/Untitled.jpeg" alt="Blog Post 1" class="img-fluid mb-3"></a>
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
@@ -161,10 +161,10 @@
         <div class="footer-carousel" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
             <div class="carousel-container">
                 <!-- Add your carousel images here -->
-                <img src="images/wedding.jpg" alt="Carousel Image 1">
+                <img src="images/weddings/lesbian-couple-celebrating-their-wedding-day-with-guests-friends.jpg" alt="Carousel Image 1">
                 <img src="images/dance.jpg" alt="Carousel Image 2">
                 <img src="images/meditation.jpg" alt="Carousel Image 3">
-                <img src="images/arts.jpg" alt="Carousel Image 4">
+                <img src="images/acts/close-up-woman-s-hand-painting-canvas-with-holding-messy-palette.jpg" alt="Carousel Image 4">
                 <img src="images/wedding.jpg" alt="Carousel Image 5">
             </div>
             <div class="carousel-controls">
