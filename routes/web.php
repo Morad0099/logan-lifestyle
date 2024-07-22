@@ -8,7 +8,7 @@ use App\Http\Controllers\RouteController;
 //     return view('modules.index.index');
 // });
 
-Route::get('/', [RouteController::class, 'index']);
+Route::get('/', [RouteController::class, 'index'])->name('home');
 Route::get('/wedding', [RouteController::class, 'wedding'])->name('wedding');
 Route::get('/arts', [RouteController::class, 'arts'])->name('arts');
 Route::get('/dance', [RouteController::class, 'dance'])->name('dance');

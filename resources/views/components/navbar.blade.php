@@ -33,7 +33,8 @@
                     </ul>
                     <div class="nav-icons">
                         <a href="#" class="nav-icon" title="Search"><i class="fas fa-search"></i></a>
-                        <a href="#" class="nav-icon" title="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#" class="nav-icon" title="Shopping Cart"><i
+                                class="fas fa-shopping-cart"></i></a>
                         <a href="#" class="nav-icon" title="Language"><i class="fas fa-globe"></i></a>
                         <a href="#" class="nav-icon" title="User Account"><i class="fas fa-user"></i></a>
                         <button class="toggle-button"><i class="fas fa-bars"></i></button>
@@ -43,8 +44,8 @@
         </div>
     </div>
 
-     <!-- Side Drawer -->
-     <div id="sideDrawer" class="side-drawer">
+    <!-- Side Drawer -->
+    <div id="sideDrawer" class="side-drawer">
         <div class="side-drawer-content">
             <img src="{{ asset('images/LoganLifestyle.png') }}" alt="Logan Lifestyle Logo" class="logo">
             {{-- <p class="company-description">Welcome to Logan Lifestyle, your premier destination for finding the perfect apartment for your next stay. Whether you’re planning a short vacation or a long-term stay, we offer a wide range of fully furnished apartments to suit your needs. Our mission is to provide a seamless booking experience, ensuring that you feel at home no matter where you are. With a commitment to quality and customer satisfaction, we make it easy for you to find, book, and enjoy your ideal apartment. Explore our listings and discover your home away from home today!</p> --}}
@@ -56,7 +57,9 @@
                 <li><a href="#">Contact Us</a></li>
             </ul>
             <h3>Book a Place</h3>
-            <p class="small-text">Ready to find your perfect stay? Browse our selection of top-rated apartments and book your ideal home away from home in just a few clicks. Enjoy comfort, convenience, and quality accommodations</p>
+            <p class="small-text">Ready to find your perfect stay? Browse our selection of top-rated apartments and book
+                your ideal home away from home in just a few clicks. Enjoy comfort, convenience, and quality
+                accommodations</p>
             <div class="booking-form">
                 <label for="location">Location</label>
                 <div class="input-with-icon">
@@ -70,12 +73,50 @@
         </div>
     </div>
 
-    <!-- Page title bar -->
-    <div class="page-title-bar">
-        <div class="container">
-            <h4 style="font-weight: bold; color: white">@yield('title', 'Page Title')</h4>
+    <!-- Page title bar with carousel -->
+    @if (Route::currentRouteName() == 'home')
+        <!-- Carousel for home page -->
+        <div id="pageTitleCarousel" class="carousel slide page-title-bar" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"
+                    style="background-image: url('{{ asset('images/meditation.jpg') }}');">
+                    <div class="container">
+                        <h4 style="font-weight: bold; color: white">@yield('title', 'Home')</h4>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('{{ asset('images/wedding.jpg') }}');">
+                    <div class="container">
+                        <h4 style="font-weight: bold; color: white">@yield('title', 'Home')</h4>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('{{ asset('images/arts.jpg') }}');">
+                    <div class="container">
+                        <h4 style="font-weight: bold; color: white">@yield('title', 'Home')</h4>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('{{ asset('images/dance.jpg') }}');">
+                    <div class="container">
+                        <h4 style="font-weight: bold; color: white">@yield('title', 'Home')</h4>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#pageTitleCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#pageTitleCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-    </div>
+    @else
+        <!-- Static image for other pages -->
+        <div class="page-title-bar" style="background-image: url('@yield('page_background')');">
+            <div class="container">
+                <h4 style="font-weight: bold; color: white">@yield('title', 'Page Title')</h4>
+            </div>
+        </div>
+    @endif
 
     <!-- Breadcrumbs -->
     <div class="breadcrumbs">
@@ -89,35 +130,41 @@
 </nav>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         const mainNav = document.querySelector('.main-nav');
         const toggleButton = document.querySelector('.toggle-button');
         const sideDrawer = document.getElementById('sideDrawer');
         const body = document.body;
-    
+
         // Create overlay element
         const overlay = document.createElement('div');
         overlay.classList.add('overlay');
         body.appendChild(overlay);
-    
-        window.addEventListener('scroll', function () {
+
+        window.addEventListener('scroll', function() {
             if (window.scrollY > 50) {
                 mainNav.classList.add('nav-scrolled');
             } else {
                 mainNav.classList.remove('nav-scrolled');
             }
         });
-    
+
         toggleButton.addEventListener('click', function() {
             sideDrawer.classList.toggle('open');
             overlay.classList.toggle('show');
             body.style.overflow = sideDrawer.classList.contains('open') ? 'hidden' : '';
         });
-    
+
         overlay.addEventListener('click', function() {
             sideDrawer.classList.remove('open');
             overlay.classList.remove('show');
             body.style.overflow = '';
         });
     });
-    </script>
+
+    $(document).ready(function() {
+        $('#pageTitleCarousel').carousel({
+            interval: 5000 // Change slide every 5 seconds
+        });
+    });
+</script>

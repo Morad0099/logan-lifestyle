@@ -2,6 +2,9 @@
 
 @section('title', 'Wedding')
 
+@section('page_background', asset('images/weddings/stylish-elegant-white-wedding-aisle-chairs-stairs.jpg'))
+
+
 @section('content')
 
 <div class="single-page-container">

@@ -2,6 +2,9 @@
 
 @section('title', 'Art Shows & Pop Ups')
 
+@section('page_background', asset('images/acts/side-view-man-with-braids-portrait.jpg'))
+
+
 @section('content')
 
 <div class="single-page-container">

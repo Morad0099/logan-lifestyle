@@ -2,6 +2,9 @@
 
 @section('title', 'Dance Parties')
 
+@section('page_background', asset('images/dance.jpg'))
+
+
 @section('content')
 
 <div class="single-page-container">
