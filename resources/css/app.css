@@ -860,9 +860,17 @@
           /* Adjust based on your logo size */
       }
 
-      .page-title-bar {
-          padding: 50px 0;
-      }
+      .page-title-bar,
+    #pageTitleCarousel .carousel-item {
+        height: 200px;
+        margin-top: -30px;
+    }
+
+    .page-title-bar h4,
+    #pageTitleCarousel h4 {
+        font-size: 1.3rem;
+        padding: 6px 12px;
+    }
 
       .footer-carousel-section {
           padding: 50px 0;
