@@ -29,14 +29,16 @@
                         <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('about_us') }}">About</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="servicesDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="#" id="servicesDropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false">
                                 Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                                 <li><a class="dropdown-item" href="{{ route('wedding') }}">Weddings</a></li>
                                 <li><a class="dropdown-item" href="{{ route('arts') }}">Art Shows & Pop Ups</a></li>
                                 <li><a class="dropdown-item" href="{{ route('dance') }}">Dance Parties</a></li>
-                                <li><a class="dropdown-item" href="{{ route('meditaion') }}">Spiritual Meditation</a></li>
+                                <li><a class="dropdown-item" href="{{ route('meditaion') }}">Spiritual Meditation</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
@@ -62,8 +64,16 @@
             {{-- <h3>Menu List</h3> --}}
             <ul class="side-menu">
                 <li><a href="/">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="{{ route('about_us') }}">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ route('wedding') }}">Weddings</a></li>
+                        <li><a href="{{ route('arts') }}">Art Shows & Pop Ups</a></li>
+                        <li><a href="{{ route('dance') }}">Dance Parties</a></li>
+                        <li><a href="{{ route('meditaion') }}">Spiritual Meditation</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
             <h3>Book a Place</h3>
@@ -145,6 +155,8 @@
         const toggleButton = document.querySelector('.toggle-button');
         const sideDrawer = document.getElementById('sideDrawer');
         const body = document.body;
+        const dropdownToggle = document.querySelector('.side-menu .dropdown-toggle');
+        const dropdownMenu = document.querySelector('.side-menu .dropdown-menu');
 
         // Create overlay element
         const overlay = document.createElement('div');
@@ -170,6 +182,12 @@
             overlay.classList.remove('show');
             body.style.overflow = '';
         });
+
+        dropdownToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        this.classList.toggle('active');
+        dropdownMenu.classList.toggle('show');
+    });
     });
 
     $(document).ready(function() {

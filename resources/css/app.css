@@ -77,6 +77,55 @@
       background-color: #f8f9fa;
   }
 
+  .side-menu .dropdown-menu {
+      display: none;
+      list-style: none;
+      margin-top: 5px !important;
+      width: 100%;
+      /* Increase width to 100% of its parent */
+      padding: 10px;
+      /* Add some padding */
+      background-color: #f8f9fa;
+      /* Light background for the dropdown */
+      border-radius: 5px;
+      /* Optional: rounded corners */
+  }
+
+  .side-menu .dropdown-menu.show {
+      display: block;
+  }
+
+  .side-menu .dropdown-menu a,
+  .side-drawer .side-menu .dropdown-menu a {
+      color: black !important;
+      display: block;
+      /* Make the link take full width */
+      padding: 5px 10px;
+      /* Add some padding to links */
+      text-decoration: none;
+      /* Remove underline */
+  }
+
+  .side-menu .dropdown-menu a:hover,
+  .side-menu .dropdown-menu a:focus,
+  .side-drawer .side-menu .dropdown-menu a:hover,
+  .side-drawer .side-menu .dropdown-menu a:focus {
+      color: #e01b1b !important;
+      text-decoration: none;
+      background-color: #f0f0f0;
+      /* Slightly darker background on hover */
+  }
+
+  .side-menu .dropdown-toggle::after {
+      content: '\25BC';
+      font-size: 0.7em;
+      margin-left: 5px;
+  }
+
+  .side-menu .dropdown-toggle.active::after {
+      content: '\25B2';
+  }
+
   .review-content {
       max-width: 600px;
       margin: 0 auto;
