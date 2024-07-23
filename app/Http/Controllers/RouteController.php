@@ -31,4 +31,9 @@ class RouteController extends Controller
     {
         return view('modules.meditation.index');
     }
+
+    public function aboutUs(): View
+    {
+        return view('modules.about_us.index');
+    }
 }

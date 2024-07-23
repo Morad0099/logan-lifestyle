@@ -26,9 +26,19 @@
                 </a>
                 <div class="d-flex align-items-center">
                     <ul class="nav mr-4">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('about_us') }}">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="servicesDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="{{ route('wedding') }}">Weddings</a></li>
+                                <li><a class="dropdown-item" href="{{ route('arts') }}">Art Shows & Pop Ups</a></li>
+                                <li><a class="dropdown-item" href="{{ route('dance') }}">Dance Parties</a></li>
+                                <li><a class="dropdown-item" href="{{ route('meditaion') }}">Spiritual Meditation</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                     </ul>
                     <div class="nav-icons">
@@ -49,7 +59,7 @@
         <div class="side-drawer-content">
             <img src="{{ asset('images/LoganLifestyle.png') }}" alt="Logan Lifestyle Logo" class="logo">
             {{-- <p class="company-description">Welcome to Logan Lifestyle, your premier destination for finding the perfect apartment for your next stay. Whether you’re planning a short vacation or a long-term stay, we offer a wide range of fully furnished apartments to suit your needs. Our mission is to provide a seamless booking experience, ensuring that you feel at home no matter where you are. With a commitment to quality and customer satisfaction, we make it easy for you to find, book, and enjoy your ideal apartment. Explore our listings and discover your home away from home today!</p> --}}
-            <h3>Menu List</h3>
+            {{-- <h3>Menu List</h3> --}}
             <ul class="side-menu">
                 <li><a href="/">Home</a></li>
                 <li><a href="#">About</a></li>

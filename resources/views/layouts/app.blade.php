@@ -10,6 +10,7 @@
     <link rel="icon" href="{{ asset('images/favicon-32x32.png') }}" type="image/x-icon">
     <link rel="icon" href="{{ asset('favicon-16x16.png') }}" type="image/png">
     <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
     <!-- AOS CSS from CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -150,6 +151,13 @@
             animation-fill-mode: forwards;
         }
 
+        .nav-item.animate-slideIn,
+        .nav-item.animate-scaleUp,
+        .nav-item.animate-rotate,
+        .nav-item.animate-bounce {
+            opacity: 1;
+        }
+
         .nav-item.animate-slideIn {
             animation-name: slideIn;
         }
@@ -162,13 +170,29 @@
             animation-name: rotate;
         }
 
-        .nav-item.animate-bounce{
+        .nav-item.animate-bounce {
             animation-name: bounce;
+        }
+
+        .nav-item:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .nav-item:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .nav-item:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .nav-item:nth-child(4) {
+            animation-delay: 0.3s;
         }
     </style>
 </head>
 
-<body>
+<body class="goldman-font">
     <div id="preloader">
         <div class="loader"></div>
         <p class="loading-text">Loading...</p>

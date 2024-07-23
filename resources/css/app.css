@@ -34,6 +34,63 @@
       transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
   }
 
+  .dropdown {
+      position: relative;
+  }
+
+  .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: -10px !important;
+      z-index: 1000;
+      min-width: 200px;
+      padding: 0.5rem 0;
+      margin: 0.125rem 0 0;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, .15);
+      border-radius: 0.25rem;
+  }
+
+  .dropdown:hover .dropdown-menu {
+      display: block;
+  }
+
+  .dropdown-item {
+      display: block;
+      width: 100%;
+      padding: 0.25rem 1.5rem;
+      clear: both;
+      font-weight: 400;
+      color: #212529;
+      text-align: inherit;
+      white-space: nowrap;
+      background-color: transparent;
+      border: 0;
+  }
+
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+      color: #e01b1b !important;
+      text-decoration: none;
+      background-color: #f8f9fa;
+  }
+
+  .review-content {
+      max-width: 600px;
+      margin: 0 auto;
+  }
+
+  .goldman-font {
+      font-family: 'Goldman', sans-serif;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+      filter: invert(100%);
+  }
+
   .nav-scrolled {
       background-color: white !important;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -311,7 +368,7 @@
 
   /* Footer Content Styles */
   .footer-content {
-      padding: 200px 0;
+      padding: 100px 0;
       background-color: #eff0f1;
       color: black;
   }
@@ -374,11 +431,14 @@
   }
 
   .side-drawer .logo {
-      /* width: 50%;
-      max-width: 200px; */
+      display: inline-block;
+      /* Ensure the element behaves like an inline element with block properties */
+      padding: 10px 100px;
+      /* Adjust the padding values as needed to increase the background width */
       margin-bottom: 20px;
       background-color: white;
   }
+
 
   .side-drawer .company-description {
       font-size: 14px;
@@ -861,16 +921,16 @@
       }
 
       .page-title-bar,
-    #pageTitleCarousel .carousel-item {
-        height: 200px;
-        margin-top: -30px;
-    }
+      #pageTitleCarousel .carousel-item {
+          height: 200px;
+          margin-top: -30px;
+      }
 
-    .page-title-bar h4,
-    #pageTitleCarousel h4 {
-        font-size: 1.3rem;
-        padding: 6px 12px;
-    }
+      .page-title-bar h4,
+      #pageTitleCarousel h4 {
+          font-size: 1.3rem;
+          padding: 6px 12px;
+      }
 
       .footer-carousel-section {
           padding: 50px 0;
