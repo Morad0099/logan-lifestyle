@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <span class="mr-3"><i class="fas fa-envelope"></i> info@example.com</span>
-                    <span><i class="fas fa-phone"></i> +1 234 567 890</span>
+                    <span><i class="fas fa-phone"></i> (416) 317-4489</span>
                 </div>
                 <div class="col-md-6 text-right">
                     <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
@@ -150,45 +150,45 @@
 </nav>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const mainNav = document.querySelector('.main-nav');
-        const toggleButton = document.querySelector('.toggle-button');
-        const sideDrawer = document.getElementById('sideDrawer');
-        const body = document.body;
-        const dropdownToggle = document.querySelector('.side-menu .dropdown-toggle');
-        const dropdownMenu = document.querySelector('.side-menu .dropdown-menu');
+document.addEventListener('DOMContentLoaded', function() {
+    const mainNav = document.querySelector('.main-nav');
+    const toggleButton = document.querySelector('.toggle-button');
+    const sideDrawer = document.getElementById('sideDrawer');
+    const body = document.body;
+    const dropdownToggle = document.querySelector('.side-menu .dropdown-toggle');
+    const dropdownMenu = document.querySelector('.side-menu .dropdown-menu');
 
-        // Create overlay element
-        const overlay = document.createElement('div');
-        overlay.classList.add('overlay');
-        body.appendChild(overlay);
+    // Create overlay element
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    body.appendChild(overlay);
 
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 50) {
-                mainNav.classList.add('nav-scrolled');
-            } else {
-                mainNav.classList.remove('nav-scrolled');
-            }
-        });
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            mainNav.classList.add('nav-scrolled');
+        } else {
+            mainNav.classList.remove('nav-scrolled');
+        }
+    });
 
-        toggleButton.addEventListener('click', function() {
-            sideDrawer.classList.toggle('open');
-            overlay.classList.toggle('show');
-            body.style.overflow = sideDrawer.classList.contains('open') ? 'hidden' : '';
-        });
+    toggleButton.addEventListener('click', function() {
+        sideDrawer.classList.toggle('open');
+        overlay.classList.toggle('show');
+        body.style.overflow = sideDrawer.classList.contains('open') ? 'hidden' : '';
+    });
 
-        overlay.addEventListener('click', function() {
-            sideDrawer.classList.remove('open');
-            overlay.classList.remove('show');
-            body.style.overflow = '';
-        });
+    overlay.addEventListener('click', function() {
+        sideDrawer.classList.remove('open');
+        overlay.classList.remove('show');
+        body.style.overflow = '';
+    });
 
-        dropdownToggle.addEventListener('click', function(e) {
+    dropdownToggle.addEventListener('click', function(e) {
         e.preventDefault();
         this.classList.toggle('active');
-        dropdownMenu.classList.toggle('show');
+        dropdownMenu.style.display = dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '' ? 'block' : 'none';
     });
-    });
+});
 
     $(document).ready(function() {
         $('#pageTitleCarousel').carousel({

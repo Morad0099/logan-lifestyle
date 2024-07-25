@@ -499,6 +499,14 @@
       font-family: "Goldman";
   }
 
+  .side-menu .dropdown-menu {
+    display: none;
+}
+
+.side-menu .dropdown-toggle.active + .dropdown-menu {
+    display: block;
+}
+
   .side-menu {
       list-style-type: none;
       padding: 0;

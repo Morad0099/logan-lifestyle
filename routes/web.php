@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookingController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ComposerController;
 use App\Http\Controllers\RouteController;
@@ -14,6 +15,10 @@ Route::get('/arts', [RouteController::class, 'arts'])->name('arts');
 Route::get('/dance', [RouteController::class, 'dance'])->name('dance');
 Route::get('/meditation', [RouteController::class, 'meditation'])->name('meditaion');
 Route::get('/about_us', [RouteController::class, 'aboutUs'])->name('about_us');
+Route::post('/events', [BookingController::class, 'store'])->name('events.store');
+Route::post('/dance_event', [BookingController::class, 'dance'])->name('dance.store');
+Route::post('/wedding_event', [BookingController::class, 'wedding'])->name('wedding.store');
+Route::post('/meditation_event', [BookingController::class, 'meditation'])->name('meditation.store');
 // routes/web.php
 Route::get('/composer-install', [ComposerController::class, 'install'])->middleware('auth');
 
