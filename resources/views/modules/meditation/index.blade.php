@@ -2,6 +2,8 @@
 
 @section('title', 'Spiritual & Meditation')
 
+@section('page_background', asset('images/meditation.jpg'))
+
 @section('content')
 
     <div class="single-page-container">
