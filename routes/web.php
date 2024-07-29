@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\BookingController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ComposerController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\RouteController;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\ComposerController;
 
 // Route::get('/', function () {
 //     return view('modules.index.index');
@@ -22,3 +23,13 @@ Route::post('/meditation_event', [BookingController::class, 'meditation'])->name
 // routes/web.php
 Route::get('/composer-install', [ComposerController::class, 'install'])->middleware('auth');
 
+
+/**Admin Routes */
+Route::get('/admin/login', [RouteController::class, 'login'])->name('admin.login');
+Route::post('admin/Login', [AdminController::class, 'login']);
+Route::middleware(['auth'])->group(function () {
+    Route::get('admin/dashboard', [RouteController::class, 'dashboard'])->name('admin.dashboard');
+    Route::get('/admin/bookings', [RouteController::class, 'bookings'])->name('admin.bookings');
+    Route::get('/admin/staff', [RouteController::class, 'staff'])->name('admin.staff');
+    Route::post('admin/logout', [AdminController::class, 'logout'])->name('logout');
+});

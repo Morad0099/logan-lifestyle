@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
+use App\Models\User;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 
@@ -35,5 +37,29 @@ class RouteController extends Controller
     public function aboutUs(): View
     {
         return view('modules.about_us.index');
+    }
+
+    public function login(): View
+    {
+        return view('modules.login.index');
+    }
+
+    public function dashboard(): View
+    {
+        $bookings = Event::count();
+
+        return view('modules.dashboard.index', compact('bookings'));
+    }
+
+    public function bookings(): View
+    {
+        $bookings = Event::orderBy('id', 'desc')->get();
+        return view('modules.bookings.index', compact('bookings'));
+    }
+
+    public function staff(): View
+    {
+        $staff = User::get();
+        return view('modules.admin-staff.index', compact('staff'));
     }
 }
