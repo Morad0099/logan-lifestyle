@@ -59,29 +59,28 @@ class AdminController extends Controller
             'name' => 'required|string',
             'email' => 'required|email|unique:users,email',
         ]);
-    
+
         if ($validator->fails()) {
             return response()->json([
                 'message' => 'Validation failed',
                 'errors' => $validator->errors(),
             ], 400);
         }
-    
-        // Hash the user's name to be used as the password
-        $password = Hash::make($request->name);
-    
+
+        $defaultPassword = Hash::make('12345678');
+
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => $password,
+            'password' => $defaultPassword,
         ]);
-    
+
         return response()->json([
             'message' => 'User created successfully',
             'user' => $user,
         ]);
     }
-    
+
 
     public function updateStaff(Request $request)
     {
@@ -141,6 +140,32 @@ class AdminController extends Controller
 
         return response()->json([
             'message' => 'User deleted successfully',
+        ]);
+    }
+
+    public function updatePassword(Request $request)
+    {
+        // Validate the form data
+        $request->validate([
+            'new_password' => 'required|string|min:8|confirmed',
+            'id' => 'required|string'
+        ]);
+
+        $user = User::where('id', $request->id)->first();
+
+        if (!$user) {
+            return response()->json([
+                'message' => 'User not found',
+            ], 404);
+        }
+
+        $hashedPassword = Hash::make($request->new_password);
+
+        $user->password = $hashedPassword;
+        $user->save();
+
+        return response()->json([
+            'message' => 'Password updated successfully',
         ]);
     }
 }

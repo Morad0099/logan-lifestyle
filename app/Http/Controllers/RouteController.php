@@ -62,4 +62,9 @@ class RouteController extends Controller
         $staff = User::get();
         return view('modules.admin-staff.index', compact('staff'));
     }
+
+    public function password()
+    {
+        return view('modules.password.index');
+    }
 }

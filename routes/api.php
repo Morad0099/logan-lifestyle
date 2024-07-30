@@ -13,3 +13,4 @@ Route::get('/get_chart', [AdminController::class, 'getChart']);
 Route::post('/add_staff', [AdminController::class, 'addStaff']);
 Route::post('/update_staff', [AdminController::class, 'updateStaff']);
 Route::delete('delete_staff', [AdminController::class, 'deleteStaff']);
+Route::post('/update_password', [AdminController::class, 'updatePassword']);

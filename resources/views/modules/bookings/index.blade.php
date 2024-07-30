@@ -18,7 +18,8 @@
                     <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Duration</th>
                     <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Number of People</th>
                     <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Comment</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Preffered Date</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Create Date</th>
                 </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
@@ -33,6 +34,7 @@
                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $item->people }}</td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"> {{ $item->comment }}</td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ date($item->date) }}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ date($item->created_at) }}</td>
                 </tr>
                 @endforeach
             </tbody>

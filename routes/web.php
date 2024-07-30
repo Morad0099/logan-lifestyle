@@ -22,6 +22,7 @@ Route::post('/wedding_event', [BookingController::class, 'wedding'])->name('wedd
 Route::post('/meditation_event', [BookingController::class, 'meditation'])->name('meditation.store');
 // routes/web.php
 Route::get('/composer-install', [ComposerController::class, 'install'])->middleware('auth');
+Route::get('lang/{locale}', [ComposerController::class, 'switchLang'])->name('lang.switch');
 
 
 /**Admin Routes */
@@ -31,5 +32,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/dashboard', [RouteController::class, 'dashboard'])->name('admin.dashboard');
     Route::get('/admin/bookings', [RouteController::class, 'bookings'])->name('admin.bookings');
     Route::get('/admin/staff', [RouteController::class, 'staff'])->name('admin.staff');
+    Route::get('/admin/password', [RouteController::class, 'password'])->name('admin.password');
     Route::post('admin/logout', [AdminController::class, 'logout'])->name('logout');
 });

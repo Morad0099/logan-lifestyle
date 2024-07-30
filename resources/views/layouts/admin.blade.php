@@ -22,16 +22,34 @@
 </head>
 
 <body class="bg-gray-100">
-    <div class="flex h-screen">
-        @include('components.admin-sidebar')
-        <div class="flex-1 flex flex-col overflow-hidden">
-            @include('components.admin-navbar')
-            <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-6">
+    <div class="flex flex-col h-screen lg:flex-row">
+        <!-- Sidebar -->
+        <div class="lg:w-64 bg-gray-800 text-white lg:h-screen lg:fixed lg:left-0 lg:top-0 overflow-y-auto">
+            @include('components.admin-sidebar')
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col lg:ml-64">
+            <!-- Navbar -->
+            <nav class="bg-white shadow-md">
+                @include('components.admin-navbar')
+            </nav>
+
+            <!-- Main Content Area -->
+            <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-4 lg:p-6">
                 @yield('content')
             </main>
         </div>
     </div>
+
     @stack('scripts')
+    <script>
+        // Toggle mobile menu
+        function toggleMobileMenu() {
+            const sidebar = document.querySelector('.lg\\:w-64');
+            sidebar.classList.toggle('hidden');
+        }
+    </script>
 </body>
 
 </html>

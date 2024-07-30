@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/admin-login.css') }}">
 </head>
 <style>
-    body {
+body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     display: flex;
@@ -23,15 +23,18 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .login-form {
     background-color: #fff;
-    padding: 20px 40px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 50%;
+    width: 100%;
+    max-width: 400px;
 }
 
 .login-form h2 {
@@ -56,6 +59,7 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .btn-login {
@@ -76,6 +80,49 @@
 .error-messages {
     margin-top: 20px;
     color: #d9534f;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 600px) {
+    .login-form {
+        padding: 15px;
+    }
+
+    .login-form h2 {
+        font-size: 20px;
+    }
+
+    .form-group input {
+        padding: 8px;
+    }
+
+    .btn-login {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .login-form {
+        padding: 10px;
+    }
+
+    .login-form h2 {
+        font-size: 18px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input {
+        padding: 6px;
+    }
+
+    .btn-login {
+        padding: 6px;
+        font-size: 12px;
+    }
 }
 
 </style>
