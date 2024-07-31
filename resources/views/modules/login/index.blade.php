@@ -129,7 +129,7 @@ body {
 <body>
     <div class="login-container">
         <div class="login-form">
-            <h2>Admin Login</h2>
+            <h2>Login</h2>
             <form method="POST" action="/admin/Login">
                 @csrf
                 <div class="form-group">
