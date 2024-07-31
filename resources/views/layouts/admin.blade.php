@@ -12,11 +12,29 @@
     <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <style>
+        <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
         body {
             font-family: 'Poppins', sans-serif;
+        }
+
+        /* Add these new styles */
+        .content-wrapper {
+            overflow-x: auto;
+            overflow-y: hidden;
+            height: calc(100vh - 64px); /* Adjust 64px to match your navbar height */
+        }
+
+        .content-inner {
+            min-width: 100%;
+            padding: 1rem;
+        }
+
+        @media (min-width: 1024px) {
+            .content-inner {
+                padding: 1.5rem;
+            }
         }
     </style>
 </head>

@@ -168,4 +168,23 @@ class AdminController extends Controller
             'message' => 'Password updated successfully',
         ]);
     }
+
+    public function updateEvent($id)
+    {
+        $event = Event::find($id);
+
+        if (!$event) {
+            return response()->json([
+                'ok' => false,
+                'message' => 'Event not found',
+            ], 404);
+        }
+
+        $event->update(['status' => 1]);
+
+        return response()->json([
+            'ok' => true,
+            'message' => 'Event updated successfully',
+        ]);
+    }
 }

@@ -16,6 +16,7 @@ class Event extends Model
         'phone',
         'address',
         'date',
+        'status',
         'duration',
         'people',
         'comment',
