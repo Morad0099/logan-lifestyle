@@ -47,8 +47,10 @@ class RouteController extends Controller
     public function dashboard(): View
     {
         $bookings = Event::count();
-
-        return view('modules.dashboard.index', compact('bookings'));
+        $pending = Event::where('status',0)->count();
+        $attended = Event::where('status',1)->count();
+        $staff = User::count();
+        return view('modules.dashboard.index', compact('bookings','pending','attended','staff'));
     }
 
     public function bookings(): View

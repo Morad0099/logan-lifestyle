@@ -5,22 +5,35 @@
 @section('content')
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         <div class="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out">
-            <h2 class="text-lg font-semibold mb-2 text-gray-700">Total Bookings</h2>
+            <div class="flex items-center mb-2">
+                <i class="fas fa-calendar-check text-gray-700 text-2xl mr-2"></i>
+                <h2 class="text-lg font-semibold text-gray-700">Total Bookings</h2>
+            </div>
             <p class="text-3xl font-bold text-blue-600">{{ $bookings }}</p>
         </div>
-        {{-- <div class="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out">
-            <h2 class="text-lg font-semibold mb-2 text-gray-700">Revenue</h2>
-            <p class="text-3xl font-bold text-green-600">$87,654.32</p>
+        <div class="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+            <div class="flex items-center mb-2">
+                <i class="fas fa-user-check text-gray-700 text-2xl mr-2"></i>
+                <h2 class="text-lg font-semibold text-gray-700">Total Attended To</h2>
+            </div>
+            <p class="text-3xl font-bold text-green-600">{{ $attended }}</p>
         </div>
         <div class="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out">
-            <h2 class="text-lg font-semibold mb-2 text-gray-700">New Customers</h2>
-            <p class="text-3xl font-bold text-purple-600">567</p>
+            <div class="flex items-center mb-2">
+                <i class="fas fa-hourglass-half text-gray-700 text-2xl mr-2"></i>
+                <h2 class="text-lg font-semibold text-gray-700">Total Pending</h2>
+            </div>
+            <p class="text-3xl font-bold text-purple-600">{{ $pending }}</p>
         </div>
         <div class="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out">
-            <h2 class="text-lg font-semibold mb-2 text-gray-700">Avg. Booking Value</h2>
-            <p class="text-3xl font-bold text-orange-600">$71.03</p>
-        </div> --}}
+            <div class="flex items-center mb-2">
+                <i class="fas fa-users text-gray-700 text-2xl mr-2"></i>
+                <h2 class="text-lg font-semibold text-gray-700">Total Staff</h2>
+            </div>
+            <p class="text-3xl font-bold text-orange-600">{{ $staff }}</p>
+        </div>
     </div>
+
 
     <div class="bg-white rounded-lg shadow-md p-6">
         <h2 class="text-xl font-semibold mb-4 text-gray-700">Monthly Bookings</h2>

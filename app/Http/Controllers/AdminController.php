@@ -73,6 +73,7 @@ class AdminController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => $defaultPassword,
+            'role' => 'staff'
         ]);
 
         return response()->json([
