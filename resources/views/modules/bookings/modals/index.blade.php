@@ -1,6 +1,6 @@
 <!-- Modal Background -->
 <div id="bookingModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
-    <div class="bg-white rounded-lg shadow-lg w-full max-w-lg mx-4">
+    <div class="bg-white rounded-lg shadow-lg w-full max-w-lg mx-4 md:max-w-md lg:max-w-lg">
         <!-- Modal Header -->
         <div class="flex items-center justify-between p-4 border-b border-gray-200">
             <h5 class="text-xl font-semibold text-gray-800">Booking Details</h5>
@@ -11,7 +11,7 @@
             </button>
         </div>
         <!-- Modal Body -->
-        <div class="p-4">
+        <div class="p-4 overflow-y-auto max-h-96">
             <table class="min-w-full divide-y divide-gray-200">
                 <tbody>
                     <tr>
@@ -67,3 +67,21 @@
         </div>
     </div>
 </div>
+
+<style>
+    @media (max-width: 640px) {
+        #bookingModal .max-w-lg {
+            max-width: 100%;
+        }
+        #bookingModal .p-4 {
+            padding: 1rem;
+        }
+    }
+</style>
+
+{{-- <script>
+    function toggleModal(show) {
+        const modal = document.getElementById('bookingModal');
+        modal.classList.toggle('hidden', !show);
+    }
+</script> --}}
