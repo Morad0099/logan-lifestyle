@@ -43,8 +43,9 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                     </ul>
-                    <div class="nav-icons">
-                        {{-- <a href="#" class="nav-icon" title="Search"><i class="fas fa-search"></i></a>
+
+                     <div class="nav-icons">
+                       {{-- <a href="#" class="nav-icon" title="Search"><i class="fas fa-search"></i></a>
                         <a href="#" class="nav-icon" title="Shopping Cart"><i
                                 class="fas fa-shopping-cart"></i></a>
                         <a href="#" class="nav-icon" title="Language"><i class="fas fa-globe"></i></a>
@@ -76,7 +77,7 @@
                 </li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
-            <h3>Book a Place</h3>
+            {{-- <h3>Book a Place</h3>
             <p class="small-text">Ready to find your perfect stay? Browse our selection of top-rated apartments and book
                 your ideal home away from home in just a few clicks. Enjoy comfort, convenience, and quality
                 accommodations</p>
@@ -84,12 +85,12 @@
                 <label for="location">Location</label>
                 <div class="input-with-icon">
                     <input type="text" id="location" placeholder="Enter location">
-                    {{-- <i class="fas fa-map-marker-alt"></i> --}}
+                    <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <label for="date">Pick a Date</label>
                 <input type="date" id="date">
                 <button class="book-button">Book Now <i class="fas fa-arrow-right"></i></button>
-            </div>
+            </div> --}}
         </div>
     </div>
 
