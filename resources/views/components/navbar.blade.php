@@ -44,11 +44,11 @@
                         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                     </ul>
                     <div class="nav-icons">
-                        <a href="#" class="nav-icon" title="Search"><i class="fas fa-search"></i></a>
+                        {{-- <a href="#" class="nav-icon" title="Search"><i class="fas fa-search"></i></a>
                         <a href="#" class="nav-icon" title="Shopping Cart"><i
                                 class="fas fa-shopping-cart"></i></a>
                         <a href="#" class="nav-icon" title="Language"><i class="fas fa-globe"></i></a>
-                        <a href="#" class="nav-icon" title="User Account"><i class="fas fa-user"></i></a>
+                        <a href="#" class="nav-icon" title="User Account"><i class="fas fa-user"></i></a> --}}
                         <button class="toggle-button"><i class="fas fa-bars"></i></button>
                     </div>
                 </div>
