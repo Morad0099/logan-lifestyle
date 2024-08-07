@@ -1,7 +1,7 @@
  <!-- Sidebar -->
  <aside id="sidebar" class="fixed inset-0 w-64 text-white lg:w-64 lg:relative lg:h-screen lg:overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out z-50" style="background-color: #4cced0;">
     <div class="flex items-center justify-center h-16" style="background-color: #f8fcfb;">
-        <a href="/" class="navbar-brand">
+        <a href="" class="navbar-brand">
             <img src="{{ asset('images/Logann.png') }}" alt="Logan Lifestyle Logo" class="logo">
         </a>        <!-- Close Button -->
         <button id="close-sidebar" class="text-gray-400 hover:text-white lg:hidden">
