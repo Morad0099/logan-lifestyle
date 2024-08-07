@@ -22,7 +22,7 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <a href="/" class="navbar-brand">
-                    <img src="{{ asset('images/LoganLifestyle.png') }}" alt="Logan Lifestyle Logo" class="logo">
+                    <img src="{{ asset('images/logan.png') }}" alt="Logan Lifestyle Logo" class="logo">
                 </a>
                 <div class="d-flex align-items-center">
                     <ul class="nav mr-4">
