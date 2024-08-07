@@ -49,7 +49,7 @@
 <body class="bg-gray-100">
     <div class="flex flex-col h-screen lg:flex-row">
         <!-- Sidebar -->
-        <div class="lg:w-64 bg-gray-800 text-white lg:h-screen lg:fixed lg:left-0 lg:top-0 overflow-y-auto">
+        <div class="lg:w-64 bg-#012c23 text-white lg:h-screen lg:fixed lg:left-0 lg:top-0 overflow-y-auto">
             @include('components.admin-sidebar')
         </div>
 
