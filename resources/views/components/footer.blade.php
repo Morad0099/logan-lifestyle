@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <a href="#" class="navbar-brand">
-                        <img src="{{ asset('images/logan.png') }}" alt="Logan Lifestyle Logo" style="height: 100px;">
+                        <img src="{{ asset('images/Logann.png') }}" alt="Logan Lifestyle Logo" style="height: 100px;">
                     </a>
                     <h4>About the Company</h4>
                     <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">About Logan Lifestyle

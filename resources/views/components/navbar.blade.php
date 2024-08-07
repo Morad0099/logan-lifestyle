@@ -22,7 +22,7 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <a href="/" class="navbar-brand">
-                    <img src="{{ asset('images/logan.png') }}" alt="Logan Lifestyle Logo" class="logo">
+                    <img src="{{ asset('images/Logann.png') }}" alt="Logan Lifestyle Logo" class="logo">
                 </a>
                 <div class="d-flex align-items-center">
                     <ul class="nav mr-4">
@@ -60,7 +60,7 @@
     <!-- Side Drawer -->
     <div id="sideDrawer" class="side-drawer">
         <div class="side-drawer-content">
-            <img src="{{ asset('images/LoganLifestyle.png') }}" alt="Logan Lifestyle Logo" class="logo">
+            <img src="{{ asset('images/Logann.png') }}" alt="Logan Lifestyle Logo" class="logo">
             {{-- <p class="company-description">Welcome to Logan Lifestyle, your premier destination for finding the perfect apartment for your next stay. Whether you’re planning a short vacation or a long-term stay, we offer a wide range of fully furnished apartments to suit your needs. Our mission is to provide a seamless booking experience, ensuring that you feel at home no matter where you are. With a commitment to quality and customer satisfaction, we make it easy for you to find, book, and enjoy your ideal apartment. Explore our listings and discover your home away from home today!</p> --}}
             {{-- <h3>Menu List</h3> --}}
             <ul class="side-menu">
