@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <span class="mr-3"><i class="fas fa-envelope"></i> info@example.com</span>
+                    <span class="mr-3"><i class="fas fa-envelope"></i> info@loganlifestyly.net</span>
                     <span><i class="fas fa-phone"></i> (416) 317-4489</span>
                 </div>
                 <div class="col-md-6 text-right">
@@ -88,9 +88,9 @@
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <label for="date">Pick a Date</label>
-                <input type="date" id="date">
+                <input type="date" id="date"> --}}
                 <button class="book-button">Book Now <i class="fas fa-arrow-right"></i></button>
-            </div> --}}
+            </div>
         </div>
     </div>
 

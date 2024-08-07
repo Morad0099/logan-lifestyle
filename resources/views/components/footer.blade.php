@@ -21,7 +21,7 @@
                     <h4>Contact Us</h4>
                     <p>Address: 28 Logan Ave, Toronto ON M4M 2M8, Canada</p>
                     <p>Phone: (416) 317-4489</p>
-                    <p>Email: info@example.com</p>
+                    <p>Email: info@loganlifestyly.net</p>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <h4>About Us</h4>

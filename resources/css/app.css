@@ -482,7 +482,7 @@
   .side-drawer .logo {
       display: inline-block;
       /* Ensure the element behaves like an inline element with block properties */
-      padding: 10px 100px;
+      /* padding: 10px 100px; */
       /* Adjust the padding values as needed to increase the background width */
       margin-bottom: 20px;
       /* background-color: white; */
@@ -567,7 +567,7 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      margin-top: 10px !important;
+      margin-top: 450px !important;
   }
 
   .book-button i {
