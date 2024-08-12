@@ -90,6 +90,7 @@
                 <label for="date">Pick a Date</label>
                 <input type="date" id="date"> --}}
                 <button class="book-button">Book Now <i class="fas fa-arrow-right"></i></button>
+                
             </div>
         </div>
     </div>
