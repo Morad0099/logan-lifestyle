@@ -101,7 +101,7 @@
         <div id="pageTitleCarousel" class="carousel slide page-title-bar" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active"
-                    style="background-image: url('{{ asset('images/meditation.jpg') }}');">
+                    style="background-image: url('{{ asset("images/spiritual/full-shot-black-man-practising-yoga.jpg") }}');">
                     <div class="container">
                         <h4 style="font-weight: bold; color: white">@yield('title', 'Home')</h4>
                     </div>
@@ -116,7 +116,7 @@
                         <h4 style="font-weight: bold; color: white">@yield('title', 'Home')</h4>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('{{ asset('images/dance.jpg') }}');">
+                <div class="carousel-item" style="background-image: url('{{ asset("images/dance/woman-recording-smartphone-video-club.jpg") }}');">
                     <div class="container">
                         <h4 style="font-weight: bold; color: white">@yield('title', 'Home')</h4>
                     </div>

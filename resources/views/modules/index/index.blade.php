@@ -85,7 +85,7 @@
                     </div>
 
                     <div class="blog-post mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                        <a href="{{ route('dance') }}"><img src="images/dance.jpg" alt="Blog Post 1" class="img-fluid mb-3"></a>
+                        <a href="{{ route('dance') }}"><img src="images/dance/woman-recording-smartphone-video-club.jpg" alt="Blog Post 1" class="img-fluid mb-3"></a>
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="blog-post mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                        <a href="{{ route('meditaion') }}"><img src="images/meditation.jpg" alt="Blog Post 1" class="img-fluid mb-3"></a>
+                        <a href="{{ route('meditaion') }}"><img src="images/spiritual/full-shot-black-man-practising-yoga.jpg" alt="Blog Post 1" class="img-fluid mb-3"></a>
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>

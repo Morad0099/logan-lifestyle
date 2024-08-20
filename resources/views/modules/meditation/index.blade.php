@@ -2,7 +2,7 @@
 
 @section('title', 'Spiritual & Meditation')
 
-@section('page_background', asset('images/meditation.jpg'))
+@section('page_background', asset('images/spiritual/women-praying-bible-light-candles-selective-focus.jpg'))
 
 @section('content')
 
@@ -10,7 +10,7 @@
         <h1 class="single-page-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Spiritual & Meditation
             Events at Logan Lifestyle</h1><br>
 
-        <img src="images/meditation.jpg" alt="Logan Lifestyle Spiritual Venue" class="single-page-image" data-aos="fade-up"
+        <img src="images/spiritual/full-shot-black-man-practising-yoga.jpg" alt="Logan Lifestyle Spiritual Venue" class="single-page-image" data-aos="fade-up"
             data-aos-duration="800" data-aos-delay="200">
 
         <h2 class="single-page-subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Find Peace and
@@ -45,11 +45,11 @@
         </ul><br>
 
         <div class="image-row">
-            <img src="images/meditation.jpg" alt="Peaceful Indoor Space" data-aos="fade-up" data-aos-duration="800"
+            <img src="images/spiritual/young-adult-enjoying-yoga-nature.jpg" alt="Peaceful Indoor Space" data-aos="fade-up" data-aos-duration="800"
                 data-aos-delay="200">
-            <img src="images/meditation.jpg" alt="Scenic Outdoor Area" data-aos="fade-up" data-aos-duration="800"
+            <img src="images/spiritual/front-view-black-man-practising-yoga.jpg" alt="Scenic Outdoor Area" data-aos="fade-up" data-aos-duration="800"
                 data-aos-delay="200">
-            <img src="images/meditation.jpg" alt="Modern Amenities" data-aos="fade-up" data-aos-duration="800"
+            <img src="images/spiritual/full-shot-black-man-practising-yoga.jpg" alt="Modern Amenities" data-aos="fade-up" data-aos-duration="800"
                 data-aos-delay="200">
         </div><br>
 
