@@ -59,7 +59,7 @@
                 <div class="blog-posts">
                     <!-- Blog Post 1 -->
                     <div class="blog-post mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                        <a href="{{ route('wedding') }}"><img src="images/weddings/low-angle-people-celebrating-wedding-nature.jpg" alt="Blog Post 1" class="img-fluid mb-3"></a>
+                        <a href="{{ route('wedding') }}"><img src="images/weddings/low-angle-people-celebrating-wedding-nature.jpg" alt="Blog Post 1" class="img-fluid mb-3 lazyload"></a>
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
@@ -73,7 +73,7 @@
 
                     <!-- Repeat for Blog Posts 2, 3, and 4 -->
                     <div class="blog-post mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                        <a href="{{ route('arts') }}"><img src="images/acts/Untitled.jpeg" alt="Blog Post 1" class="img-fluid mb-3"></a>
+                        <a href="{{ route('arts') }}"><img src="images/acts/Untitled.jpeg" alt="Blog Post 1" class="img-fluid mb-3 lazyload"></a>
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
@@ -85,7 +85,7 @@
                     </div>
 
                     <div class="blog-post mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                        <a href="{{ route('dance') }}"><img src="images/dance/woman-recording-smartphone-video-club.jpg" alt="Blog Post 1" class="img-fluid mb-3"></a>
+                        <a href="{{ route('dance') }}"><img src="images/dance/woman-recording-smartphone-video-club.jpg" alt="Blog Post 1" class="img-fluid mb-3 lazyload"></a>
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="blog-post mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                        <a href="{{ route('meditaion') }}"><img src="images/spiritual/full-shot-black-man-practising-yoga.jpg" alt="Blog Post 1" class="img-fluid mb-3"></a>
+                        <a href="{{ route('meditaion') }}"><img src="images/spiritual/full-shot-black-man-practising-yoga.jpg" alt="Blog Post 1" class="img-fluid mb-3 lazyload"></a>
                         <div class="blog-post-meta small text-muted mb-2">
                             <span>Date</span> / <span>By Author</span>
                         </div>
@@ -161,11 +161,11 @@
         <div class="footer-carousel" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
             <div class="carousel-container">
                 <!-- Add your carousel images here -->
-                <img src="images/weddings/lesbian-couple-celebrating-their-wedding-day-with-guests-friends.jpg" alt="Carousel Image 1">
-                <img src="images/dance.jpg" alt="Carousel Image 2">
-                <img src="images/meditation.jpg" alt="Carousel Image 3">
-                <img src="images/acts/close-up-woman-s-hand-painting-canvas-with-holding-messy-palette.jpg" alt="Carousel Image 4">
-                <img src="images/wedding.jpg" alt="Carousel Image 5">
+                <img src="images/weddings/lesbian-couple-celebrating-their-wedding-day-with-guests-friends.jpg" class="lazyload"  alt="Carousel Image 1">
+                <img src="images/dance.jpg" class="lazyload"  alt="Carousel Image 2">
+                <img src="images/meditation.jpg" class="lazyload"  alt="Carousel Image 3">
+                <img src="images/acts/close-up-woman-s-hand-painting-canvas-with-holding-messy-palette.jpg" class="lazyload"  alt="Carousel Image 4">
+                <img src="images/wedding.jpg" class="lazyload"  alt="Carousel Image 5">
             </div>
             <div class="carousel-controls">
                 <button class="carousel-button" data-index="0"></button>
