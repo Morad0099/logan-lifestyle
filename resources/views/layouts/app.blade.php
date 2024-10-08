@@ -215,6 +215,8 @@
     {{-- <script src="{{ mix('js/app.js') }}"></script> --}}
     <!-- AOS JS from CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     <script>
         // Initialize AOS
         AOS.init();
