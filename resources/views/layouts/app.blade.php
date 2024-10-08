@@ -229,17 +229,16 @@
             // Simulate loader delay (adjust as needed)
             setTimeout(() => {
                 preloader.style.display = 'none';
-
                 // Start curtain animation
                 curtainContainer.classList.add('reveal');
 
-                // After curtain animation, show content and remove curtains
                 setTimeout(() => {
                     curtainContainer.style.display = 'none';
                     app.style.display = 'block';
                     AOS.refresh(); // Refresh AOS
                 }, 1000); // Adjust timing to match the curtain animation duration
-            }, 1000);
+            }, 500); // Reduce delay from 1000ms (1 second) to 500ms or less
+
         });
 
         document.addEventListener('DOMContentLoaded', function() {
