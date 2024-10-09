@@ -11,7 +11,7 @@
         <h1 class="single-page-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Dance Parties at Logan
             Lifestyle</h1><br>
 
-        <img src="images/dance/woman-recording-smartphone-video-club.jpg" alt="Logan Lifestyle Dance Venue" class="single-page-image" data-aos="fade-up"
+        <img data-src="images/dance/woman-recording-smartphone-video-club.jpg" alt="Logan Lifestyle Dance Venue" class="single-page-image lazyload" data-aos="fade-up"
             data-aos-duration="800" data-aos-delay="200">
 
         <h2 class="single-page-subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Get Ready to Dance
@@ -44,12 +44,12 @@
         </ul><br>
 
         <div class="image-row">
-            <img src="images/dance/people-improvising-dance-battle-club.jpg" alt="Spacious Dance Floor" data-aos="fade-up" data-aos-duration="800"
-                data-aos-delay="200">
-            <img src="images/dance/nightlife-with-people-dancing-club.jpg" alt="Modern Sound System" data-aos="fade-up" data-aos-duration="800"
-                data-aos-delay="200">
-            <img src="images/dance/nightlife-people-having-fun-bars-clubs.jpg" alt="Dynamic Lighting" data-aos="fade-up" data-aos-duration="800"
-                data-aos-delay="200">
+            <img data-src="images/dance/people-improvising-dance-battle-club.jpg" alt="Spacious Dance Floor" data-aos="fade-up" data-aos-duration="800"
+               class="lazyload" data-aos-delay="200">
+            <img data-src="images/dance/nightlife-with-people-dancing-club.jpg" alt="Modern Sound System" data-aos="fade-up" data-aos-duration="800"
+            class="lazyload" data-aos-delay="200">
+            <img data-src="images/dance/nightlife-people-having-fun-bars-clubs.jpg" alt="Dynamic Lighting" data-aos="fade-up" data-aos-duration="800"
+            class="lazyload" data-aos-delay="200">
         </div>
 
         <p class="client-comment" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">

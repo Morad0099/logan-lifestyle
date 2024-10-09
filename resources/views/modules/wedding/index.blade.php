@@ -10,8 +10,8 @@
     <div class="single-page-container">
         <h1 class="single-page-title">Weddings at Logan Lifestyle</h1><br>
 
-        <img src="images/weddings/low-angle-people-celebrating-wedding-nature.jpg" alt="Logan Lifestyle Wedding Venue"
-            class="single-page-image" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <img data-src="images/weddings/low-angle-people-celebrating-wedding-nature.jpg" alt="Logan Lifestyle Wedding Venue"
+            class="single-page-image lazyload" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
 
         <h2 class="single-page-subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">The Perfect Blend of
             Elegance and Charm</h2><br>
@@ -23,12 +23,12 @@
         </p>
 
         <div class="image-row">
-            <img src="images/weddings/stylish-elegant-white-wedding-aisle-chairs-stairs.jpg" alt="Image 1"
-                data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-            <img src="images/weddings/lesbian-couple-celebrating-their-wedding-day-with-guests-friends.jpg" alt="Image 2"
-                data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-            <img src="images/weddings/bunch-flowers-leaves-table.jpg" alt="Image 3" data-aos="fade-up"
-                data-aos-duration="800" data-aos-delay="200">
+            <img data-src="images/weddings/stylish-elegant-white-wedding-aisle-chairs-stairs.jpg" alt="Image 1"
+                class="lazyload" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <img data-src="images/weddings/lesbian-couple-celebrating-their-wedding-day-with-guests-friends.jpg" alt="Image 2"
+                class="lazyload" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <img data-src="images/weddings/bunch-flowers-leaves-table.jpg" alt="Image 3" data-aos="fade-up"
+                class="lazyload" data-aos-duration="800" data-aos-delay="200">
         </div>
 
         <p class="client-comment" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">

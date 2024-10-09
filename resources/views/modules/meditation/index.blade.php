@@ -10,7 +10,7 @@
         <h1 class="single-page-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Spiritual & Meditation
             Events at Logan Lifestyle</h1><br>
 
-        <img src="images/spiritual/full-shot-black-man-practising-yoga.jpg" alt="Logan Lifestyle Spiritual Venue" class="single-page-image" data-aos="fade-up"
+        <img data-src="images/spiritual/full-shot-black-man-practising-yoga.jpg" alt="Logan Lifestyle Spiritual Venue" class="single-page-image lazyload" data-aos="fade-up"
             data-aos-duration="800" data-aos-delay="200">
 
         <h2 class="single-page-subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Find Peace and
@@ -45,11 +45,11 @@
         </ul><br>
 
         <div class="image-row">
-            <img src="images/spiritual/young-adult-enjoying-yoga-nature.jpg" alt="Peaceful Indoor Space" data-aos="fade-up" data-aos-duration="800"
+            <img data-src="images/spiritual/young-adult-enjoying-yoga-nature.jpg" class="lazyload" alt="Peaceful Indoor Space" data-aos="fade-up" data-aos-duration="800"
                 data-aos-delay="200">
-            <img src="images/spiritual/front-view-black-man-practising-yoga.jpg" alt="Scenic Outdoor Area" data-aos="fade-up" data-aos-duration="800"
+            <img data-src="images/spiritual/front-view-black-man-practising-yoga.jpg" class="lazyload" alt="Scenic Outdoor Area" data-aos="fade-up" data-aos-duration="800"
                 data-aos-delay="200">
-            <img src="images/spiritual/full-shot-black-man-practising-yoga.jpg" alt="Modern Amenities" data-aos="fade-up" data-aos-duration="800"
+            <img data-src="images/spiritual/full-shot-black-man-practising-yoga.jpg" class="lazyload" alt="Modern Amenities" data-aos="fade-up" data-aos-duration="800"
                 data-aos-delay="200">
         </div><br>
 
