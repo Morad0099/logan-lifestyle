@@ -193,14 +193,14 @@
 </head>
 
 <body class="goldman-font">
-    {{-- <div id="preloader">
+    <div id="preloader">
         <div class="loader"></div>
         <p class="loading-text">Loading...</p>
     </div>
     <div id="curtain-container">
         <div class="curtain"></div>
-    </div> --}}
-    <div id="app" >
+    </div>
+    <div id="app" style="display: none;">
         @include('components.navbar')
         <main>
             @yield('content')
