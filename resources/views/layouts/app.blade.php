@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logan Lifestyle</title>
     {{-- <link href="{{ mix('css/app.css') }}" rel="stylesheet"> --}}
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="icon" href="{{ asset('images/favicon-32x32.png') }}" type="image/x-icon">
     <link rel="icon" href="{{ asset('favicon-16x16.png') }}" type="image/png">
     <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
