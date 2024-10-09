@@ -14,9 +14,9 @@
     <!-- AOS CSS from CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
+    {{-- <script>
         AOS.init();
-    </script> <!-- Bootstrap CSS -->
+    </script> <!-- Bootstrap CSS --> --}}
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <!-- Include Font Awesome -->
@@ -210,7 +210,7 @@
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     {{-- <script src="{{ mix('js/app.js') }}"></script> --}}
@@ -219,15 +219,15 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <script>
-        // Initialize AOS
-        AOS.init();
-        // Preloader and Curtain Animation Script
+        window.addEventListener('load', function() {
+            AOS.init(); // Initialize AOS after load
+        });
+
         window.addEventListener('load', function() {
             const preloader = document.getElementById('preloader');
             const curtainContainer = document.getElementById('curtain-container');
             const app = document.getElementById('app');
 
-            // Simulate loader delay (adjust as needed)
             setTimeout(() => {
                 preloader.style.display = 'none';
                 // Start curtain animation
@@ -237,9 +237,8 @@
                     curtainContainer.style.display = 'none';
                     app.style.display = 'block';
                     AOS.refresh(); // Refresh AOS
-                }, 1000); // Adjust timing to match the curtain animation duration
-            }, 500); // Reduce delay from 1000ms (1 second) to 500ms or less
-
+                }, 1000);
+            }, 500);
         });
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -256,8 +255,6 @@
 
             window.addEventListener('scroll', handleScroll);
             window.addEventListener('resize', handleScroll);
-
-            // Trigger the function initially to show elements already in view
             handleScroll();
         });
 
